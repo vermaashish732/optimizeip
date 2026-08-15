@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OptimizeIP / Patent Studio</title>
+  <meta name="description" content="OptimizeIP — a boutique patent studio for founders, counsel and licensing teams. Prior art, EoU, FTO, filing, prosecution and monetization." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;600;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            serif: ['"Instrument Serif"', 'Georgia', 'serif'],
+            sans: ['Inter', 'sans-serif'],
+            mono: ['"Space Mono"', 'monospace'],
+          },
+          colors: {
+            paper: '#fafaf8',
+            studioDark: '#08121e',
+            studioBlue: '#007090',
+            studioBorder: '#e2e5e9',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    ::selection {
+      background-color: #007090;
+      color: #ffffff;
+    }
+    .marquee {
+      display: flex;
+      width: max-content;
+      animation: scroll 28s linear infinite;
+    }
+    @keyframes scroll {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+  </style>
+</head>
+<body class="bg-[#fafaf8] text-[#111827] font-sans antialiased">
+
+  <!-- Top Navigation -->
+  <header class="border-b border-[#e5e7eb] sticky top-0 bg-[#fafaf8]/95 backdrop-blur-sm z-50">
+    <div class="max-w-[1400px] mx-auto px-6 sm:px-10 h-20 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <a href="#" class="flex items-baseline gap-2">
+          <span class="font-serif text-3xl sm:text-4xl tracking-tight text-[#08121e] font-normal">Optimize<span class="text-[#007090]">IP</span></span>
+          <span class="font-mono text-[11px] text-gray-500 uppercase tracking-widest">/ Patent Studio</span>
+        </a>
+      </div>
+
+      <nav class="hidden lg:flex items-center gap-8 text-[11px] font-mono uppercase tracking-widest text-gray-700 font-medium">
+        <a href="#services" class="hover:text-[#007090] transition-colors">Services</a>
+        <a href="#technologies" class="hover:text-[#007090] transition-colors">Technologies</a>
+        <a href="#manifesto" class="hover:text-[#007090] transition-colors">Manifesto</a>
+        <a href="#approach" class="hover:text-[#007090] transition-colors">Approach</a>
+        <a href="#locations" class="hover:text-[#007090] transition-colors">Locations</a>
+        <a href="#contact" class="hover:text-[#007090] transition-colors">Contact</a>
+      </nav>
+
+      <div>
+        <a href="#contact" class="inline-flex items-center gap-2 bg-[#08121e] hover:bg-[#007090] text-white px-5 py-3 text-xs font-mono uppercase tracking-wider transition-colors">
+          Book a consult &rarr;
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="max-w-[1400px] mx-auto px-6 sm:px-10 pt-10 pb-20 border-b border-[#e5e7eb]">
+    <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center text-[11px] font-mono uppercase tracking-widest text-gray-400 mb-12 gap-2">
+      <div>Est. 2019 &nbsp;&middot;&nbsp; New Delhi &nbsp;&middot;&nbsp; Gurugram &nbsp;&middot;&nbsp; Agra</div>
+      <div>Vol. 01 &mdash; Patent Studio</div>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-end">
+      <div class="lg:col-span-8">
+        <h1 class="font-serif text-6xl sm:text-8xl md:text-9xl leading-[0.92] text-[#08121e] tracking-tight">
+          Own what you <br />
+          invent.<br />
+          <span class="italic text-[#007090] font-light">Defend what you own.</span>
+        </h1>
+        <p class="mt-10 text-lg sm:text-xl text-gray-700 max-w-2xl font-light leading-relaxed">
+          OptimizeIP is a boutique patent studio for founders, counsel and licensing teams. We mine, draft, prosecute and monetize the ideas that will define the next decade &mdash; with the discipline of a top-tier firm and the taste of an editorial studio.
+        </p>
+      </div>
+
+      <div class="lg:col-span-4 flex flex-col justify-between h-full border-t lg:border-t-0 lg:border-l border-[#e5e7eb] lg:pl-10 pt-8 lg:pt-0">
+        <div class="border border-[#e5e7eb] p-6 bg-white shadow-xs">
+          <div class="text-[10px] font-mono uppercase tracking-widest text-gray-400 mb-2">Fig. 001 &mdash; Sheet A / Claim 1</div>
+          <div class="text-xs font-mono text-gray-800">[ Filed &middot; Publ. &middot; Grant ]</div>
+          <div class="my-6 space-y-2 text-xs font-mono text-gray-600">
+            <div class="flex items-center gap-2">&#9671; Portfolio Mining</div>
+            <div class="flex items-center gap-2">&#9671; Claim Charts</div>
+            <div class="flex items-center gap-2">&#9671; Global Filing</div>
+          </div>
+          <div class="text-[10px] font-mono uppercase tracking-widest text-[#007090]">Scroll to explore the studio &darr;</div>
+        </div>
+
+        <div class="mt-8 flex flex-col sm:flex-row gap-3">
+          <a href="#contact" class="bg-[#08121e] text-white px-6 py-4 text-xs font-mono uppercase tracking-wider text-center hover:bg-[#007090] transition-colors">
+            Request a portfolio audit &rarr;
+          </a>
+          <a href="#services" class="border border-[#08121e] text-[#08121e] px-6 py-4 text-xs font-mono uppercase tracking-wider text-center hover:bg-gray-100 transition-colors">
+            View services
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Marquee / Ticker -->
+  <div class="border-b border-[#e5e7eb] bg-white py-4 overflow-hidden">
+    <div class="max-w-[1400px] mx-auto px-6 mb-2">
+      <span class="text-[10px] font-mono uppercase tracking-widest text-gray-400">&sect; In practice &middot; Across the IP value chain</span>
+    </div>
+    <div class="marquee text-xs font-mono uppercase tracking-widest text-gray-800 flex gap-8">
+      <span>Patent Monetization &#10022;</span>
+      <span>Prior Art &#10022;</span>
+      <span>Freedom to Operate &#10022;</span>
+      <span>Claim Charts &#10022;</span>
+      <span>Reverse Engineering &#10022;</span>
+      <span>Portfolio Mining &#10022;</span>
+      <span>Global Filing &#10022;</span>
+      <span>Invalidation &#10022;</span>
+      <span>EoU Analysis &#10022;</span>
+      <span>Patent Monetization &#10022;</span>
+      <span>Prior Art &#10022;</span>
+      <span>Freedom to Operate &#10022;</span>
+      <span>Claim Charts &#10022;</span>
+      <span>Reverse Engineering &#10022;</span>
+      <span>Portfolio Mining &#10022;</span>
+      <span>Global Filing &#10022;</span>
+      <span>Invalidation &#10022;</span>
+      <span>EoU Analysis &#10022;</span>
+    </div>
+  </div>
+
+  <!-- § I · Practice Areas -->
+  <section id="services" class="max-w-[1400px] mx-auto px-6 sm:px-10 py-20 border-b border-[#e5e7eb]">
+    <div class="mb-14">
+      <div class="text-[11px] font-mono uppercase tracking-widest text-[#007090] mb-2">&sect; I &middot; Practice areas</div>
+      <h2 class="font-serif text-3xl sm:text-5xl text-[#08121e]">Four practices, one continuous IP value chain.</h2>
+    </div>
+
+    <div class="space-y-24">
+      <!-- Practice 1 -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch border-t border-[#e5e7eb] pt-12">
+        <div class="lg:col-span-5 flex flex-col justify-between">
+          <div>
+            <h3 class="font-serif text-5xl sm:text-6xl text-[#08121e] mb-3">Patent<br />Monetization</h3>
+            <p class="text-gray-600 text-base font-light mb-8">Extract the commercial value locked inside your portfolio.</p>
+          </div>
+          <div class="divide-y divide-[#e5e7eb] border-y border-[#e5e7eb] font-mono text-[11px] uppercase tracking-wider text-gray-800">
+            <div class="py-3 flex justify-between"><span>Assets Mining</span><span>&rarr;</span></div>
+            <div class="py-3 flex justify-between"><span>Portfolio Management</span><span>&rarr;</span></div>
+            <div class="py-3 flex justify-between"><span>Evidence of Use (EoU)</span><span>&rarr;</span></div>
+            <div class="py-3 flex justify-between"><span>Infringement Analysis</span><span>&rarr;</span></div>
+            <div class="py-3 flex justify-between"><span>Strength (HML) Analysis</span><span>&rarr;</span></div>
+            <div class="py-3 flex justify-between"><span>Categorization</span><span>&rarr;</span></div>
+            <div class="py-3 flex justify-between"><span>Tagging</span><span>&rarr;</span></div>
+          </div>
+        </div>
+        <div class="lg:col-span-7 relative min-h-[380px] bg-slate-900 overflow-hidden group">
+          <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80" alt="Silicon mapped to claim scope" class="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-700" />
+          <div class="absolute bottom-4 left-6 text-[11px] font-mono uppercase tracking-widest text-sky-200 bg-black/60 px-3 py-1.5 backdrop-blur-xs">
+            Fig. 002 &mdash; Silicon, mapped to claim scope.
+          </div>
+        </div>
+      </div>
+
+      <!-- Practice 2 -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch border-t border-[#e5e7eb] pt-12">
+        <div class="lg:col-span-7 order-2 lg:order-1 relative min-h-[380px] bg-slate-900 overflow-hidden group">
+          <img src="https://images.unsplash.com/photo-1505664194779-8beaceb93744?auto=format&fit=crop&w=1200&q=80" alt="Prior Art & Search desk" class="w-full h-full object-cover opacity-85 group-hover:scale-105 transition-transform duration-700" />
+          <div class="absolute bottom-4 left-6 text-[11px] font-mono uppercase tracking-widest text-sky-200 bg-black/60 px-3 py-1.5 backdrop-blur-xs">
+            Fig. 003 &mdash; The record, read carefully.
+          </div>
+        </div>
+        <div class="lg:col-span-5 order-1 lg:order-2 flex flex-col justify-between">
+          <div>
+            <h3 class="font-serif text-5xl sm:text-6xl text-[#08121e] mb-3">Prior Art &<br />Search</h3>
+            <p class="text-gray-600 text-base font-light mb-8">Know exactly where your idea sits in the historical record.</p>
+          </div>
+          <div class="divide-y divide-[#e5e7eb] border-y border-[#e5e7eb] font-mono text-[11px] uppercase tracking-wider text-gray-800">
+            <div class="py-3 flex justify-between"><span>Prior Art Searches</span><span>&rarr;</span></div>
+            <div class="py-3 flex justify-between"><span>Novelty Searches</span><span>&rarr;</span></div>
+            <div class="py-3 flex justify-between"><span>Patentability Searches</span><span>&rarr;</span></div>
+            <div class="py-3 flex justify-between"><span>Invalidation Searches</span><span>&rarr;</span></div>
+            <div class="py-3 flex justify-between"><span>Validation Searches</span><span>&rarr;</span></div>
+            <div class="py-3 flex justify-between"><span>Landscape Searches</span><span>&rarr;</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Practice 3 -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch border-t border-[#e5e7eb] pt-12">
+        <div class="lg:col-span-5 flex flex-col justify-between">
+          <div>
+            <h3 class="font-serif text-5xl sm:text-6xl text-[#08121e] mb-3">Risk &<br />Strategy</h3>
+            <p class="text-gray-600 text-base font-light mb-8">Ship products with the legal terrain fully surveyed.</p>
+          </div>
+          <div class="divide-y divide-[#e5e7eb] border-y border-[#e5e7eb] font-mono text-[11px] uppercase tracking-wider text-gray-800">
+            <div class="py-3 flex justify-between"><span>Freedom-to-Operate (FTO) Searches</span><span>&rarr;</span></div>
+            <div class="py-3 flex justify-between"><span>Non-Infringement Analysis</span><span>&rarr;</span></div>
+            <div class="py-3 flex justify-between"><span>Stress-testing product features</span><span>&rarr;</span></div>
+            <div class="py-3 flex justify-between"><span>Design-around Strategy</span><span>&rarr;</span></div>
+          </div>
+        </div>
+        <div class="lg:col-span-7 relative min-h-[380px] bg-slate-900 overflow-hidden group">
+          <img src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&w=1200&q=80" alt="Stress testing and balance scale" class="w-full h-full object-cover opacity-85 group-hover:scale-105 transition-transform duration-700" />
+          <div class="absolute bottom-4 left-6 text-[11px] font-mono uppercase tracking-widest text-sky-200 bg-black/60 px-3 py-1.5 backdrop-blur-xs">
+            Fig. 004 &mdash; Stress-testing, before the market does.
+          </div>
+        </div>
+      </div>
+
+      <!-- Practice 4 -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch border-t border-[#e5e7eb] pt-12">
+        <div class="lg:col-span-7 order-2 lg:order-1 relative min-h-[380px] bg-slate-900 overflow-hidden group">
+          <img src="https://images.unsplash.com/photo-1450133064473-71024230f91b?auto=format&fit=crop&w=1200&q=80" alt="Filing and patent seal signature" class="w-full h-full object-cover opacity-85 group-hover:scale-105 transition-transform duration-700" />
+          <div class="absolute bottom-4 left-6 text-[11px] font-mono uppercase tracking-widest text-sky-200 bg-black/60 px-3 py-1.5 backdrop-blur-xs">
+            Fig. 005 &mdash; The signature that grants the claim.
+          </div>
+        </div>
+        <div class="lg:col-span-5 order-1 lg:order-2 flex flex-col justify-between">
+          <div>
+            <h3 class="font-serif text-5xl sm:text-6xl text-[#08121e] mb-3">Filing &<br />Prosecution</h3>
+            <p class="text-gray-600 text-base font-light mb-8">Drafts that hold up. Prosecution that lands.</p>
+          </div>
+          <div class="divide-y divide-[#e5e7eb] border-y border-[#e5e7eb] font-mono text-[11px] uppercase tracking-wider text-gray-800">
+            <div class="py-3 flex justify-between"><span>Patent Drafting</span><span>&rarr;</span></div>
+            <div class="py-3 flex justify-between"><span>Global Patent Filing</span><span>&rarr;</span></div>
+            <div class="py-3 flex justify-between"><span>Office Action Responses</span><span>&rarr;</span></div>
+            <div class="py-3 flex justify-between"><span>Claim Formation</span><span>&rarr;</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- § II · Technologies -->
+  <section id="technologies" class="max-w-[1400px] mx-auto px-6 sm:px-10 py-20 border-b border-[#e5e7eb]">
+    <div class="mb-14">
+      <div class="text-[11px] font-mono uppercase tracking-widest text-[#007090] mb-2">&sect; II &middot; Technologies</div>
+      <h2 class="font-serif text-5xl sm:text-7xl text-[#08121e] leading-[1.05]">
+        Technologies we work across, from <span class="italic text-[#007090]">silicon to software.</span>
+      </h2>
+      <p class="mt-6 text-gray-600 text-base max-w-3xl font-light">
+        67+ technical focus areas across seven domains. Deep specialisation in memory systems, semiconductors, AI, autonomous systems and communication standards &mdash; with the databases and researchers to back it up.
+      </p>
+    </div>
+
+    <!-- Domain T1 -->
+    <div class="py-12 border-t border-[#e5e7eb] grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+      <div class="lg:col-span-4">
+        <div class="text-[10px] font-mono uppercase tracking-widest text-gray-400 mb-1">Domain &middot; T1</div>
+        <h3 class="font-serif text-3xl sm:text-4xl text-[#08121e]">Computer Science & Software</h3>
+        <div class="text-[11px] font-mono uppercase tracking-widest text-[#007090] mt-2">31 focus areas</div>
+      </div>
+      <div class="lg:col-span-8 flex flex-wrap gap-2">
+        <span class="px-3 py-2 border border-[#d1d5db] bg-white font-mono text-[11px] uppercase tracking-wide text-gray-800">Artificial Intelligence (AI)</span>
+        <span class="px-3 py-2 border border-[#d1d5db] bg-white font-mono text-[11px] uppercase tracking-wide text-gray-800">AI / Machine Learning</span>
+        <span class="px-3 py-2 border border-[#d1d5db] bg-white font-mono text-[11px] uppercase tracking-wide text-gray-800">Autonomous Driving Systems</span>
+        <span class="px-3 py-2 border border-[#d1d5db] bg-white font-mono text-[11px] uppercase tracking-wide text-gray-800">Autonomous Technologies</span>
+        <span class="px-3 py-2 border border-[#d1d5db] bg-white font-mono text-[11px] uppercase tracking-wide text-gray-800">Cloud Computing</span>
+        <span class="px-3 py-2 border border-[#d1d5db] bg-white font-mono text-[11px] uppercase tracking-wide text-gray-800">Computer Architecture</span>
+        <span class="px-3 py-2 border border-[#d1d5db] bg-white font-mono text-[11px] uppercase tracking-wide text-gray-800">Computer Graphics</span>
+        <span class="px-3 py-2 border border-[#d1d5db] bg-white font-mono text-[11px] uppercase tracking-wide text-gray-800">Computer Networks</span>
+        <span class="px-3 py-2 border border-[#d1d5db] bg-white font-mono text-[11px] uppercase tracking-wide text-gray-800">Computer Programming</span>
+        <span class="px-3 py-2 border border-[#d1d5db] bg-white font-mono text-[11px] uppercase tracking-wide text-gray-800">Computer Processors</span>
+        <span class="px-3 py-2 border border-[#d1d5db] bg-white font-mono text-[11px] uppercase tracking-wide text-gray-800">Computer Security</span>
+        <span class="px-3 py-2 border border-[#d1d5db] bg-white font-mono text-[11px] uppercase tracking-wide text-gray-800">Cryptography</span>
+        <span class="px-3 py-2 border border-[#d1d5db] bg-white font-mono text-[11px] uppercase tracking-wide text-gray-800">Driverless Cars</span>
+        <span class="px-3 py-2 border border-[#d1d5db] bg-white font-mono text-[11px] uppercase tracking-wide text-gray-800">Graphical User Interface (GUI)</span>
+        <span class="px-3 py-2 border border-[#d1d5db] bg-white font-mono text-[11px] uppercase tracking-wide text-gray-800">Heterogeneous Computing</span>
+        <span class="px-3 py-2 border border-[#d1d5db] bg-white font-mono text-[11px] uppercase tracking-wide text-gray-800">Information Security</span>
+        <span class="px-3 py-2 border border-[#d1d5db] bg-white font-mono text-[11px] uppercase tracking-wide text-gray-800">Instruction Set Architecture (ISA)</span>
+        <span class="px-3 py-2 border border-[#d1d5db] bg-white font-mono text-[11px] uppercase tracking-wide text-gray-800">Internet of Things (IoT)</span>
+        <span class="px-3 py-2 border border-[#d1d5db] bg-white font-mono text-[11px] uppercase tracking-wide text-gray-800">Machine Learning</span>
+        <span class="px-3 py-2 border border-[#d1d5db] bg-white font-mono text-[11px] uppercase tracking-wide text-gray-800">Memory Management</span>
+        <span class="px-3 py-2 border border-[#d1d5db] bg-white font-mono text-[11px] uppercase tracking-wide text-gray-800">Mobile Applications</span>
+        <span class="px-3 py-2 border border-[#d1d5db] bg-white font-mono text-[11px] uppercase tracking-wide text-gray-800">Mobile Payments</span>
+        <span class="px-3 py-2 border border-[#d1d5db] bg-white font-mono text-[11px] uppercase tracking-wide text-gray-800">Programming Languages</span>
+        <span class="px-3 py-2 border border-[#d1d5db] bg-white font-mono text-[11px] uppercase tracking-wide text-gray-800">Recommendation Systems</span>
+        <span class="px-3 py-2 border border-[#d1d5db] bg-white font-mono text-[11px] uppercase tracking-wide text-gray-800">Social Networks</span>
+        <span class="px-3 py-2 border border-[#d1d5db] bg-white font-mono text-[11px] uppercase tracking-wide text-gray-800">Software Engineering</span>
+        <span class="px-3 py-2 border border-[#d1d5db] bg-white font-mono text-[11px] uppercase tracking-wide text-gray-800">System Software</span>
+        <span class="px-3 py-2 border border-[#d1d5db] bg-white font-mono text-[11px] uppercase tracking-wide text-gray-800">Virtual Reality (VR)</span>
+        <span class="px-3 py-2 border border-[#d1d5db] bg-white font-mono text-[11px] uppercase tracking-wide text-gray-800">Augmented Reality (AR)</span>
+        <span class="px-3 py-2 border border-[#d1d5db] bg-white font-mono text-[11px] uppercase tracking-wide text-gray-800">Wearables</span>
+        <span class="px-3 py-2 border border-[#d1d5db] bg-white font-mono text-[11px] uppercase tracking-wide text-gray-800">Wireless & Mobile Communication</span>
+      </div>
+    </div>
+
+    <!-- Domain T2 -->
+    <div class="py-12 border-t border-[#e5e7eb] grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+      <div class="lg:col-span-4">
+        <div class="text-[10px] font-mono uppercase tracking-widest text-gray-400 mb-1">Domain &middot; T2</div>
+        <h3 class="font-serif text-3xl sm:text-4xl text-[#08121e]">Memory & Semiconductor</h3>
+        <div class="text-[11px] font-mono uppercase tracking-widest text-[#007090] mt-2">6 focus areas</div>
+      </div>
+      <div class="lg:col-span-8 flex flex-wrap gap-2">
+        <span class="px-3 py-2 border border-[#d1d5db] bg-white font-mono text-[11px] uppercase tracking-wide text-gray-800">AI Accelerator</span>
+        <span class="px-3 py-2 border border-[#d1d5db] bg-white font-mono text-[11px] uppercase tracking-wide text-gray-800">Memory Systems</span>
+        <span class="px-3 py-2 border border-[#d1d5db] bg-white font-mono text-[11px] uppercase tracking-wide text-gray-800">Different Memory Standards</span>
+        <span class="px-3 py-2 border border-[#d1d5db] bg-white font-mono text-[11px] uppercase tracking-wide text-gray-800">Semiconductor Fabrication</span>
+        <span class="px-3 py-2 border border-[#d1d5db] bg-white font-mono text-[11px] uppercase tracking-wide text-gray-800">Semiconductor Materials</span>
+        <span class="px-3 py-2 border border-[#d1d5db] bg-white font-mono text-[11px] uppercase tracking-wide text-gray-800">PIM (Processing-in-Memory)</span>
+      </div>
+    </div>
+
+    <!-- Domain T3 -->
+    <div class="py-12 border-t border-[#e5e7eb] grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+      <div class="lg:col-span-4">
+        <div class="text-[10px] font-mono uppercase tracking-widest text-gray-400 mb-1">Domain &middot; T3</div>
+        <h3 class="font-serif text-3xl sm:text-4xl text-[#08121e]">Memory Standards</h3>
+        <div class="text-[11px] font-mono uppercase tracking-widest text-[#007090] mt-2">12 focus areas</div>
+      </div>
+      <div class="lg:col-span-8 flex flex-wrap gap-2">
+        <span class="px-3 py-2 border border-[#d1d5db] bg-white font-mono text-[11px] uppercase tracking-wide text-gray-800">DDR4</span>
+        <span class="px-3 py-2 border border-[#d1d5db] bg-white font-mono text-[11px] uppercase tracking-wide text-gray-800">DDR5</span>
+        <span class="px-3 py-2 border border-[#d1d5db] bg-white font-mono text-[11px] uppercase tracking-wide text-gray-800">LPDDR4</span>
+        <span class="px-3 py-2 border border-[#d1d5db] bg-white font-mono text-[11px] uppercase tracking-wide text-gray-800">LPDDR5</span>
+        <span class="px-3 py-2 border border-[#d1d5db] bg-white font-mono text-[11px] uppercase tracking-wide text-gray-800">HBM3</span>
+        <span class="px-3 py-2 border border-[#d1d5db] bg-white font-mono text-[11px] uppercase tracking-wide text-gray-800">GDDR6</span>
+        <span class="px-3 py-2 border border-[#d1d5db] bg-white font-mono text-[11px] uppercase tracking-wide text-gray-800">eMMC</span>
+        <span class="px-3 py-2 border border-[#d1d5db] bg-white font-mono text-[11px] uppercase tracking-wide text-gray-800">UFS</span>
+        <span class="px-3 py-2 border border-[#d1d5db] bg-white font-mono text-[11px] uppercase tracking-wide text-gray-800">NVM</span>
+        <span class="px-3 py-2 border border-[#d1d5db] bg-white font-mono text-[11px] uppercase tracking-wide text-gray-800">ONFI</span>
+        <span class="px-3 py-2 border border-[#d1d5db] bg-white font-mono text-[11px] uppercase tracking-wide text-gray-800">NVDIMM-N</span>
+        <span class="px-3 py-2 border border-[#d1d5db] bg-white font-mono text-[11px] uppercase tracking-wide text-gray-800">NVDIMM-P</span>
+      </div>
+    </div>
+
+    <!-- Domain T4 -->
+    <div class="py-12 border-t border-[#e5e7eb] grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+      <div class="lg:col-span-4">
+        <div class="text-[10px] font-mono uppercase tracking-widest text-gray-400 mb-1">Domain &middot; T4</div>
+        <h3 class="font-serif text-3xl sm:text-4xl text-[#08121e]">Communication Standards</h3>
+        <div class="text-[11px] font-mono uppercase tracking-widest text-[#007090] mt-2">2 focus areas</div>
+      </div>
+      <div class="lg:col-span-8 flex flex-wrap gap-2">
+        <span class="px-3 py-2 border border-[#d1d5db] bg-white font-mono text-[11px] uppercase tracking-wide text-gray-800">3GPP Standards</span>
+        <span class="px-3 py-2 border border-[#d1d5db] bg-white font-mono text-[11px] uppercase tracking-wide text-gray-800">Payments</span>
+      </div>
+    </div>
+
+    <!-- Domain T5 -->
+    <div class="py-12 border-t border-[#e5e7eb] grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+      <div class="lg:col-span-4">
+        <div class="text-[10px] font-mono uppercase tracking-widest text-gray-400 mb-1">Domain &middot; T5</div>
+        <h3 class="font-serif text-3xl sm:text-4xl text-[#08121e]">Electronics & Hardware</h3>
+        <div class="text-[11px] font-mono uppercase tracking-widest text-[#007090] mt-2">7 focus areas</div>
+      </div>
+      <div class="lg:col-span-8 flex flex-wrap gap-2">
+        <span class="px-3 py-2 border border-[#d1d5db] bg-white font-mono text-[11px] uppercase tracking-wide text-gray-800">CPU</span>
+        <span class="px-3 py-2 border border-[#d1d5db] bg-white font-mono text-[11px] uppercase tracking-wide text-gray-800">Processors</span>
+        <span class="px-3 py-2 border border-[#d1d5db] bg-white font-mono text-[11px] uppercase tracking-wide text-gray-800">Microcontrollers</span>
+        <span class="px-3 py-2 border border-[#d1d5db] bg-white font-mono text-[11px] uppercase tracking-wide text-gray-800">Microgrid</span>
+        <span class="px-3 py-2 border border-[#d1d5db] bg-white font-mono text-[11px] uppercase tracking-wide text-gray-800">LED Circuits</span>
+        <span class="px-3 py-2 border border-[#d1d5db] bg-white font-mono text-[11px] uppercase tracking-wide text-gray-800">Electrical Circuits</span>
+        <span class="px-3 py-2 border border-[#d1d5db] bg-white font-mono text-[11px] uppercase tracking-wide text-gray-800">Electronic Circuits</span>
+      </div>
+    </div>
+
+    <!-- Domain T6 -->
+    <div class="py-12 border-t border-[#e5e7eb] grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+      <div class="lg:col-span-4">
+        <div class="text-[10px] font-mono uppercase tracking-widest text-gray-400 mb-1">Domain &middot; T6</div>
+        <h3 class="font-serif text-3xl sm:text-4xl text-[#08121e]">Energy & Renewable</h3>
+        <div class="text-[11px] font-mono uppercase tracking-widest text-[#007090] mt-2">3 focus areas</div>
+      </div>
+      <div class="lg:col-span-8 flex flex-wrap gap-2">
+        <span class="px-3 py-2 border border-[#d1d5db] bg-white font-mono text-[11px] uppercase tracking-wide text-gray-800">Solar PV Systems</span>
+        <span class="px-3 py-2 border border-[#d1d5db] bg-white font-mono text-[11px] uppercase tracking-wide text-gray-800">Solar PV Devices</span>
+        <span class="px-3 py-2 border border-[#d1d5db] bg-white font-mono text-[11px] uppercase tracking-wide text-gray-800">Solar Devices</span>
+      </div>
+    </div>
+
+    <!-- Domain T7 -->
+    <div class="py-12 border-t border-[#e5e7eb] grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+      <div class="lg:col-span-4">
+        <div class="text-[10px] font-mono uppercase tracking-widest text-gray-400 mb-1">Domain &middot; T7</div>
+        <h3 class="font-serif text-3xl sm:text-4xl text-[#08121e]">Consumer & Miscellaneous</h3>
+        <div class="text-[11px] font-mono uppercase tracking-widest text-[#007090] mt-2">6 focus areas</div>
+      </div>
+      <div class="lg:col-span-8 flex flex-wrap gap-2">
+        <span class="px-3 py-2 border border-[#d1d5db] bg-white font-mono text-[11px] uppercase tracking-wide text-gray-800">Camera Technologies</span>
+        <span class="px-3 py-2 border border-[#d1d5db] bg-white font-mono text-[11px] uppercase tracking-wide text-gray-800">Projector Technologies</span>
+        <span class="px-3 py-2 border border-[#d1d5db] bg-white font-mono text-[11px] uppercase tracking-wide text-gray-800">Printer Technologies</span>
+        <span class="px-3 py-2 border border-[#d1d5db] bg-white font-mono text-[11px] uppercase tracking-wide text-gray-800">E-commerce</span>
+        <span class="px-3 py-2 border border-[#d1d5db] bg-white font-mono text-[11px] uppercase tracking-wide text-gray-800">Electric Vehicles (EV)</span>
+        <span class="px-3 py-2 border border-[#d1d5db] bg-white font-mono text-[11px] uppercase tracking-wide text-gray-800">Fitness Technologies</span>
+      </div>
+    </div>
+
+    <!-- Research Stack -->
+    <div class="mt-16 pt-12 border-t-2 border-[#08121e] grid grid-cols-1 md:grid-cols-12 gap-8">
+      <div class="md:col-span-4">
+        <div class="text-[10px] font-mono uppercase tracking-widest text-[#007090]">Research Stack</div>
+        <h4 class="font-serif text-2xl text-[#08121e] mt-1">The databases we actually use.</h4>
+      </div>
+      <div class="md:col-span-4">
+        <div class="text-[11px] font-mono uppercase tracking-widest text-gray-400 mb-3">Patent databases</div>
+        <div class="flex flex-wrap gap-2 text-xs font-mono text-gray-800">
+          <span class="bg-gray-200/70 px-2.5 py-1">Derwent Innovation</span>
+          <span class="bg-gray-200/70 px-2.5 py-1">USPTO</span>
+          <span class="bg-gray-200/70 px-2.5 py-1">Google Patents</span>
+          <span class="bg-gray-200/70 px-2.5 py-1">WIPO</span>
+          <span class="bg-gray-200/70 px-2.5 py-1">Espacenet</span>
+          <span class="bg-gray-200/70 px-2.5 py-1">Patsnap</span>
+        </div>
+      </div>
+      <div class="md:col-span-4">
+        <div class="text-[11px] font-mono uppercase tracking-widest text-gray-400 mb-3">Non-patent sources</div>
+        <div class="flex flex-wrap gap-2 text-xs font-mono text-gray-800">
+          <span class="bg-gray-200/70 px-2.5 py-1">IEEE</span>
+          <span class="bg-gray-200/70 px-2.5 py-1">Google Scholar</span>
+          <span class="bg-gray-200/70 px-2.5 py-1">GitHub Repositories</span>
+          <span class="bg-gray-200/70 px-2.5 py-1">Vendor Datasheets</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- § III · Manifesto -->
+  <section id="manifesto" class="max-w-[1400px] mx-auto px-6 sm:px-10 py-20 border-b border-[#e5e7eb]">
+    <div class="mb-14">
+      <div class="text-[11px] font-mono uppercase tracking-widest text-[#007090] mb-2">&sect; III &middot; Manifesto</div>
+      <h2 class="font-serif text-3xl sm:text-5xl text-[#08121e]">We treat patents the way a great editor treats a manuscript.</h2>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div class="border-t border-[#08121e] pt-6">
+        <div class="text-[10px] font-mono uppercase tracking-widest text-[#007090] mb-4">Movement &middot; I</div>
+        <h4 class="font-serif text-2xl text-[#08121e] leading-snug mb-4">An idea is only as valuable as the claim that protects it.</h4>
+        <p class="text-sm text-gray-600 font-light leading-relaxed">We write claims that survive prosecution and litigation. Not templates &mdash; bespoke drafts, engineered around the invention and the market it enters.</p>
+      </div>
+
+      <div class="border-t border-[#08121e] pt-6">
+        <div class="text-[10px] font-mono uppercase tracking-widest text-[#007090] mb-4">Movement &middot; II</div>
+        <h4 class="font-serif text-2xl text-[#08121e] leading-snug mb-4">Every portfolio hides a licensing case waiting to be built.</h4>
+        <p class="text-sm text-gray-600 font-light leading-relaxed">Through portfolio mining, EoU mapping and reverse engineering, we surface the assets that are already infringed &mdash; and translate them into monetizable positions.</p>
+      </div>
+
+      <div class="border-t border-[#08121e] pt-6">
+        <div class="text-[10px] font-mono uppercase tracking-widest text-[#007090] mb-4">Movement &middot; III</div>
+        <h4 class="font-serif text-2xl text-[#08121e] leading-snug mb-4">Read the record before you ship the product.</h4>
+        <p class="text-sm text-gray-600 font-light leading-relaxed">Prior-art searches, FTO opinions and stress tests. We tell you what is out there &mdash; plainly, without softening the verdict &mdash; so you deploy capital with clarity.</p>
+      </div>
+
+      <div class="border-t border-[#08121e] pt-6">
+        <div class="text-[10px] font-mono uppercase tracking-widest text-[#007090] mb-4">Movement &middot; IV</div>
+        <h4 class="font-serif text-2xl text-[#08121e] leading-snug mb-4">File once. File everywhere. File to grant.</h4>
+        <p class="text-sm text-gray-600 font-light leading-relaxed">Global drafting and prosecution across the USPTO, EPO, JPO, CNIPA and the Indian Patent Office. One studio. One editor. One coherent portfolio.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- § IV · Approach -->
+  <section id="approach" class="max-w-[1400px] mx-auto px-6 sm:px-10 py-20 border-b border-[#e5e7eb]">
+    <div class="mb-14">
+      <div class="text-[11px] font-mono uppercase tracking-widest text-[#007090] mb-2">&sect; IV &middot; Approach</div>
+      <h2 class="font-serif text-3xl sm:text-5xl text-[#08121e]">How we work, in four movements.</h2>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div class="border border-[#e5e7eb] p-6 bg-white flex flex-col justify-between">
+        <div>
+          <div class="flex justify-between items-center mb-6">
+            <span class="font-serif text-3xl text-gray-300">&alpha;</span>
+            <span class="text-[10px] font-mono uppercase tracking-widest text-[#007090]">Step 01</span>
+          </div>
+          <h4 class="font-serif text-2xl text-[#08121e] mb-2">Intake</h4>
+          <p class="text-xs text-gray-600 font-light leading-relaxed">A 30-minute conversation. Portfolio, product, business model. We size the problem before scoping the work.</p>
+        </div>
+      </div>
+
+      <div class="border border-[#e5e7eb] p-6 bg-white flex flex-col justify-between">
+        <div>
+          <div class="flex justify-between items-center mb-6">
+            <span class="font-serif text-3xl text-gray-300">&beta;</span>
+            <span class="text-[10px] font-mono uppercase tracking-widest text-[#007090]">Step 02</span>
+          </div>
+          <h4 class="font-serif text-2xl text-[#08121e] mb-2">Diagnosis</h4>
+          <p class="text-xs text-gray-600 font-light leading-relaxed">Prior-art landscape, portfolio audit, or FTO &mdash; a written diagnosis with a clear verdict, not a hedged memo.</p>
+        </div>
+      </div>
+
+      <div class="border border-[#e5e7eb] p-6 bg-white flex flex-col justify-between">
+        <div>
+          <div class="flex justify-between items-center mb-6">
+            <span class="font-serif text-3xl text-gray-300">&gamma;</span>
+            <span class="text-[10px] font-mono uppercase tracking-widest text-[#007090]">Step 03</span>
+          </div>
+          <h4 class="font-serif text-2xl text-[#08121e] mb-2">Execution</h4>
+          <p class="text-xs text-gray-600 font-light leading-relaxed">Drafting, filing, EoU builds, sales decks. A single accountable partner from your side of the desk.</p>
+        </div>
+      </div>
+
+      <div class="border border-[#e5e7eb] p-6 bg-white flex flex-col justify-between">
+        <div>
+          <div class="flex justify-between items-center mb-6">
+            <span class="font-serif text-3xl text-gray-300">&delta;</span>
+            <span class="text-[10px] font-mono uppercase tracking-widest text-[#007090]">Step 04</span>
+          </div>
+          <h4 class="font-serif text-2xl text-[#08121e] mb-2">Handoff</h4>
+          <p class="text-xs text-gray-600 font-light leading-relaxed">You leave with claim charts, filings, and a monetization thesis your CFO and counsel can both defend.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-12 pt-8 border-t border-[#e5e7eb] grid grid-cols-2 md:grid-cols-4 gap-6 text-center font-mono">
+      <div>
+        <div class="font-serif text-4xl text-[#08121e]">300+</div>
+        <div class="text-[10px] uppercase tracking-widest text-gray-500 mt-1">Patents drafted & filed</div>
+      </div>
+      <div>
+        <div class="font-serif text-4xl text-[#08121e]">40+</div>
+        <div class="text-[10px] uppercase tracking-widest text-gray-500 mt-1">Portfolios audited</div>
+      </div>
+      <div>
+        <div class="font-serif text-4xl text-[#08121e]">9</div>
+        <div class="text-[10px] uppercase tracking-widest text-gray-500 mt-1">Jurisdictions</div>
+      </div>
+      <div>
+        <div class="font-serif text-4xl text-[#08121e]">1</div>
+        <div class="text-[10px] uppercase tracking-widest text-gray-500 mt-1">Accountable partner</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- § V · Locations -->
+  <section id="locations" class="max-w-[1400px] mx-auto px-6 sm:px-10 py-20 border-b border-[#e5e7eb]">
+    <div class="mb-14">
+      <div class="text-[11px] font-mono uppercase tracking-widest text-[#007090] mb-2">&sect; V &middot; Locations</div>
+      <h2 class="font-serif text-3xl sm:text-5xl text-[#08121e]">Studios across India. Opening in USA & China.</h2>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
+      <div class="border border-[#e5e7eb] p-6 bg-white flex flex-col justify-between">
+        <div>
+          <div class="flex justify-between items-center text-[10px] font-mono uppercase tracking-widest text-gray-400 mb-4">
+            <span>01</span>
+            <span class="text-[#007090]">HQ</span>
+          </div>
+          <h4 class="font-serif text-2xl text-[#08121e]">New Delhi</h4>
+          <div class="text-[11px] font-mono text-gray-500 mb-3">India</div>
+          <p class="text-xs text-gray-600 font-light">The studio's flagship. Portfolio, filing & prosecution.</p>
+        </div>
+        <div class="text-[10px] font-mono text-gray-400 mt-6">28.61&deg;N &middot; 77.20&deg;E</div>
+      </div>
+
+      <div class="border border-[#e5e7eb] p-6 bg-white flex flex-col justify-between">
+        <div>
+          <div class="flex justify-between items-center text-[10px] font-mono uppercase tracking-widest text-gray-400 mb-4">
+            <span>02</span>
+            <span>Studio</span>
+          </div>
+          <h4 class="font-serif text-2xl text-[#08121e]">Gurugram</h4>
+          <div class="text-[11px] font-mono text-gray-500 mb-3">India</div>
+          <p class="text-xs text-gray-600 font-light">Engineering-heavy studio for reverse-engineering & EoU.</p>
+        </div>
+        <div class="text-[10px] font-mono text-gray-400 mt-6">28.45&deg;N &middot; 77.02&deg;E</div>
+      </div>
+
+      <div class="border border-[#e5e7eb] p-6 bg-white flex flex-col justify-between">
+        <div>
+          <div class="flex justify-between items-center text-[10px] font-mono uppercase tracking-widest text-gray-400 mb-4">
+            <span>03</span>
+            <span>Studio</span>
+          </div>
+          <h4 class="font-serif text-2xl text-[#08121e]">Agra</h4>
+          <div class="text-[11px] font-mono text-gray-500 mb-3">India</div>
+          <p class="text-xs text-gray-600 font-light">Prior art & prosecution support.</p>
+        </div>
+        <div class="text-[10px] font-mono text-gray-400 mt-6">27.17&deg;N &middot; 78.00&deg;E</div>
+      </div>
+
+      <div class="border border-[#e5e7eb] p-6 bg-white flex flex-col justify-between">
+        <div>
+          <div class="flex justify-between items-center text-[10px] font-mono uppercase tracking-widest text-gray-400 mb-4">
+            <span>04</span>
+            <span class="text-amber-600">Opening</span>
+          </div>
+          <h4 class="font-serif text-2xl text-[#08121e]">New York</h4>
+          <div class="text-[11px] font-mono text-gray-500 mb-3">USA &mdash; opening 2026</div>
+          <p class="text-xs text-gray-600 font-light">US prosecution & licensing operations.</p>
+        </div>
+        <div class="text-[10px] font-mono text-gray-400 mt-6">40.71&deg;N &middot; 74.00&deg;W</div>
+      </div>
+
+      <div class="border border-[#e5e7eb] p-6 bg-white flex flex-col justify-between">
+        <div>
+          <div class="flex justify-between items-center text-[10px] font-mono uppercase tracking-widest text-gray-400 mb-4">
+            <span>05</span>
+            <span class="text-amber-600">Opening</span>
+          </div>
+          <h4 class="font-serif text-2xl text-[#08121e]">Shenzhen</h4>
+          <div class="text-[11px] font-mono text-gray-500 mb-3">China &mdash; opening 2026</div>
+          <p class="text-xs text-gray-600 font-light">APAC monetization & hardware IP.</p>
+        </div>
+        <div class="text-[10px] font-mono text-gray-400 mt-6">22.54&deg;N &middot; 114.05&deg;E</div>
+      </div>
+    </div>
+    <div class="mt-8 text-center text-[11px] font-mono uppercase tracking-widest text-gray-500">
+      3 active studios &middot; 2 openings 2026 &middot; one accountable partner
+    </div>
+  </section>
+
+  <!-- § VI · Contact -->
+  <section id="contact" class="max-w-[1400px] mx-auto px-6 sm:px-10 py-20 border-b border-[#e5e7eb]">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+      
+      <div class="lg:col-span-5 flex flex-col justify-between">
+        <div>
+          <div class="text-[11px] font-mono uppercase tracking-widest text-[#007090] mb-2">&sect; VI &middot; Contact</div>
+          <h2 class="font-serif text-4xl sm:text-6xl text-[#08121e] leading-[1.05] mb-4">Tell us about the invention. We reply within one business day.</h2>
+          
+          <div class="mt-8 space-y-6">
+            <div>
+              <div class="text-[10px] font-mono uppercase tracking-widest text-gray-400 mb-1">Direct line</div>
+              <a href="mailto:akashverma@optimize-ip.com" class="block font-mono text-sm text-[#08121e] hover:text-[#007090]">akashverma@optimize-ip.com</a>
+              <a href="tel:+919758263443" class="block font-mono text-sm text-[#08121e] hover:text-[#007090] mt-1">+91 9758 263 443</a>
+              <div class="text-xs text-gray-500 mt-1">Akash Verma &middot; Business</div>
+            </div>
+
+            <div>
+              <div class="text-[10px] font-mono uppercase tracking-widest text-gray-400 mb-1">Offices</div>
+              <div class="font-mono text-xs text-gray-800">New Delhi &middot; Gurugram &middot; Agra</div>
+              <div class="font-mono text-xs text-gray-500">USA &middot; China &mdash; opening 2026</div>
+            </div>
+
+            <div>
+              <div class="text-[10px] font-mono uppercase tracking-widest text-gray-400 mb-2">What to expect</div>
+              <ul class="text-xs font-mono text-gray-600 space-y-1.5">
+                <li>&middot; A reply from a partner, not a bot.</li>
+                <li>&middot; A 30-min diagnostic call, at no cost.</li>
+                <li>&middot; A written verdict, before any invoice.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="lg:col-span-7">
+        <div class="border border-[#e5e7eb] p-8 sm:p-10 bg-white">
+          <div class="flex justify-between items-center mb-6 pb-4 border-b border-[#e5e7eb]">
+            <span class="text-xs font-mono uppercase tracking-widest text-[#08121e]">Enquiry &mdash; Form 001-A</span>
+            <span class="text-[11px] font-mono uppercase tracking-widest text-gray-400">[ Confidential ]</span>
+          </div>
+
+          <form onsubmit="event.preventDefault(); alert('Enquiry submitted. A partner will review and connect within 1 business day.');" class="space-y-6 font-mono text-xs">
+            <div>
+              <label class="block uppercase tracking-wider text-gray-500 mb-2">Full name</label>
+              <input type="text" required placeholder="Jane Doe" class="w-full px-4 py-3 border border-[#d1d5db] bg-[#fafaf8] focus:bg-white focus:outline-none focus:border-[#007090] text-gray-900" />
+            </div>
+
+            <div>
+              <label class="block uppercase tracking-wider text-gray-500 mb-2">Email</label>
+              <input type="email" required placeholder="you@company.com" class="w-full px-4 py-3 border border-[#d1d5db] bg-[#fafaf8] focus:bg-white focus:outline-none focus:border-[#007090] text-gray-900" />
+            </div>
+
+            <div>
+              <label class="block uppercase tracking-wider text-gray-500 mb-2">Company / Firm <span class="text-gray-400">(Optional)</span></label>
+              <input type="text" placeholder="Acme Inc." class="w-full px-4 py-3 border border-[#d1d5db] bg-[#fafaf8] focus:bg-white focus:outline-none focus:border-[#007090] text-gray-900" />
+            </div>
+
+            <div>
+              <label class="block uppercase tracking-wider text-gray-500 mb-2">Service of interest</label>
+              <select class="w-full px-4 py-3 border border-[#d1d5db] bg-[#fafaf8] focus:bg-white focus:outline-none focus:border-[#007090] text-gray-900">
+                <option value="">Select &mdash; optional</option>
+                <option value="monetization">Patent Monetization</option>
+                <option value="prior-art">Prior Art Search</option>
+                <option value="fto">Freedom to Operate</option>
+                <option value="filing">Filing & Prosecution</option>
+                <option value="audit">Portfolio Audit</option>
+                <option value="other">Other / General enquiry</option>
+              </select>
+            </div>
+
+            <div>
+              <label class="block uppercase tracking-wider text-gray-500 mb-2">Brief the studio</label>
+              <textarea rows="4" placeholder="Tell us about the invention, portfolio, or product. What are you trying to protect, defend, or monetize?" class="w-full px-4 py-3 border border-[#d1d5db] bg-[#fafaf8] focus:bg-white focus:outline-none focus:border-[#007090] text-gray-900"></textarea>
+            </div>
+
+            <p class="text-[10px] text-gray-400 tracking-wide">By submitting, you consent to a private, confidential reply from a partner at OptimizeIP.</p>
+
+            <button type="submit" class="w-full py-4 bg-[#08121e] hover:bg-[#007090] text-white uppercase tracking-widest transition-colors font-medium text-xs">
+              Send enquiry &rarr;
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="max-w-[1400px] mx-auto px-6 sm:px-10 py-16 text-gray-600 font-mono text-xs">
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-10 pb-12 border-b border-[#e5e7eb]">
+      <div class="md:col-span-5">
+        <span class="font-serif text-3xl text-[#08121e]">Optimize<span class="text-[#007090]">IP</span></span>
+        <p class="mt-3 text-xs text-gray-500 max-w-sm">A boutique patent studio. Full-lifecycle IP for the companies building what comes next.</p>
+      </div>
+
+      <div class="md:col-span-3 space-y-2">
+        <div class="uppercase tracking-widest text-gray-400 mb-3">Studio</div>
+        <div><a href="#services" class="hover:text-[#007090]">Services</a></div>
+        <div><a href="#manifesto" class="hover:text-[#007090]">Manifesto</a></div>
+        <div><a href="#approach" class="hover:text-[#007090]">Approach</a></div>
+        <div><a href="#locations" class="hover:text-[#007090]">Locations</a></div>
+        <div><a href="#contact" class="hover:text-[#007090]">Contact</a></div>
+      </div>
+
+      <div class="md:col-span-4 space-y-2">
+        <div class="uppercase tracking-widest text-gray-400 mb-3">Direct Contact</div>
+        <div class="text-[#08121e]">akashverma@optimize-ip.com</div>
+        <div class="text-[#08121e]">+91 9758 263 443</div>
+        <div class="text-gray-400 pt-2">Offices: New Delhi &middot; Gurugram &middot; Agra &middot; USA/China 2026</div>
+      </div>
+    </div>
+
+    <div class="pt-8 flex flex-col sm:flex-row justify-between items-center text-[10px] text-gray-400 gap-4">
+      <div>&copy; 2026 OptimizeIP &middot; All rights reserved</div>
+      <div>Vol. 01 / MMXXVI &middot; Patent Studio</div>
+    </div>
+  </footer>
+
+</body>
+</html>
