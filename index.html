@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OptimizeIP — Boutique Patent Studio</title>
+  <meta name="description" content="OptimizeIP — a boutique patent studio for founders, counsel and licensing teams. Prior art, EoU, FTO, filing, prosecution and monetization." />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            serif: ['"Instrument Serif"', 'Georgia', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            mono: ['"Space Mono"', 'monospace'],
+          },
+          colors: {
+            studio: {
+              bg: '#f8f7fd',
+              card: '#ffffff',
+              dark: '#16122d',
+              navy: '#221c43',
+              purple: '#7b52ba',
+              indigo: '#5843a6',
+              accent: '#9366ea',
+              border: '#e6e2f3',
+              text: '#1f1b2e',
+              muted: '#68617d'
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    ::selection {
+      background-color: #7b52ba;
+      color: #ffffff;
+    }
+    .marquee {
+      display: flex;
+      width: max-content;
+      animation: scroll 28s linear infinite;
+    }
+    @keyframes scroll {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+  </style>
+</head>
+<body class="bg-[#f8f7fd] text-[#1f1b2e] font-sans antialiased selection:bg-[#7b52ba] selection:text-white">
+
+  <!-- Top Navigation -->
+  <header class="border-b border-[#e6e2f3] sticky top-0 bg-[#f8f7fd]/90 backdrop-blur-md z-50">
+    <div class="max-w-[1400px] mx-auto px-6 sm:px-10 h-20 flex items-center justify-between">
+      
+      <!-- Brand Logo -->
+      <a href="#" class="flex items-center gap-3 group">
+        <div class="w-11 h-11 flex items-center justify-center">
+          <img src="logo.png" onerror="this.onerror=null; this.parentElement.innerHTML='<svg viewBox=\'0 0 100 100\' class=\'w-10 h-10\'><defs><linearGradient id=\'optGrad1\' x1=\'0%\' y1=\'0%\' x2=\'100%\' y2=\'100%\'><stop offset=\'0%\' stop-color=\'#9366ea\' /><stop offset=\'100%\' stop-color=\'#5843a6\' /></linearGradient><linearGradient id=\'optGrad2\' x1=\'0%\' y1=\'0%\' x2=\'100%\' y2=\'100%\'><stop offset=\'0%\' stop-color=\'#7b52ba\' /><stop offset=\'100%\' stop-color=\'#3c2e78\' /></linearGradient></defs><circle cx=\'38\' cy=\'38\' r=\'22\' fill=\'none\' stroke=\'url(#optGrad1)\' stroke-width=\'12\' /><circle cx=\'64\' cy=\'64\' r=\'22\' fill=\'none\' stroke=\'url(#optGrad2)\' stroke-width=\'12\' /><circle cx=\'70\' cy=\'26\' r=\'11\' fill=\'#5843a6\' /><circle cx=\'30\' cy=\'74\' r=\'11\' fill=\'#7b52ba\' /></svg>';" alt="OptimizeIP Logo" class="w-10 h-10 object-contain drop-shadow-sm transition-transform duration-300 group-hover:scale-105" />
+        </div>
+        <div class="flex items-baseline gap-2">
+          <span class="font-sans font-bold text-2xl tracking-tight text-[#16122d]">Optimize<span class="text-[#7b52ba]">IP</span></span>
+          <span class="font-mono text-[11px] text-[#68617d] uppercase tracking-widest hidden sm:inline">/ Patent Studio</span>
+        </div>
+      </a>
+
+      <!-- Menu Items -->
+      <nav class="hidden lg:flex items-center gap-8 text-[11px] font-mono uppercase tracking-widest text-[#68617d] font-medium">
+        <a href="#services" class="hover:text-[#7b52ba] transition-colors">Services</a>
+        <a href="#technologies" class="hover:text-[#7b52ba] transition-colors">Technologies</a>
+        <a href="#manifesto" class="hover:text-[#7b52ba] transition-colors">Manifesto</a>
+        <a href="#approach" class="hover:text-[#7b52ba] transition-colors">Approach</a>
+        <a href="#locations" class="hover:text-[#7b52ba] transition-colors">Locations</a>
+        <a href="#contact" class="hover:text-[#7b52ba] transition-colors">Contact</a>
+      </nav>
+
+      <div>
+        <a href="#contact" class="inline-flex items-center gap-2 bg-[#16122d] hover:bg-[#7b52ba] text-white px-5 py-3 text-xs font-mono uppercase tracking-wider transition-colors shadow-sm">
+          Book a consult &rarr;
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="max-w-[1400px] mx-auto px-6 sm:px-10 pt-12 pb-20 border-b border-[#e6e2f3]">
+    <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center text-[11px] font-mono uppercase tracking-widest text-[#68617d] mb-12 gap-2">
+      <div class="flex items-center gap-2">
+        <span class="w-2 h-2 rounded-full bg-[#7b52ba] animate-pulse"></span>
+        Est. 2019 &nbsp;&middot;&nbsp; New Delhi &nbsp;&middot;&nbsp; Gurugram &nbsp;&middot;&nbsp; Agra
+      </div>
+      <div>Vol. 01 &mdash; Patent Studio</div>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-end">
+      <div class="lg:col-span-8">
+        <h1 class="font-serif text-6xl sm:text-8xl md:text-9xl leading-[0.92] text-[#16122d] tracking-tight">
+          Own what you <br />
+          invent.<br />
+          <span class="italic text-[#7b52ba] font-light">Defend what you own.</span>
+        </h1>
+        <p class="mt-10 text-lg sm:text-xl text-[#68617d] max-w-2xl font-light leading-relaxed">
+          OptimizeIP is a boutique patent studio for founders, counsel and licensing teams. We mine, draft, prosecute and monetize the ideas that will define the next decade &mdash; with the discipline of a top-tier firm and the taste of an editorial studio.
+        </p>
+      </div>
+
+      <div class="lg:col-span-4 flex flex-col justify-between h-full border-t lg:border-t-0 lg:border-l border-[#e6e2f3] lg:pl-10 pt-8 lg:pt-0">
+        <div class="border border-[#e6e2f3] p-7 bg-white shadow-sm">
+          <div class="text-[10px] font-mono uppercase tracking-widest text-[#7b52ba] mb-2 font-semibold">Fig. 001 &mdash; Sheet A / Claim 1</div>
+          <div class="text-xs font-mono text-[#16122d] font-bold">[ Filed &middot; Publ. &middot; Grant ]</div>
+          <div class="my-6 space-y-2.5 text-xs font-mono text-[#68617d]">
+            <div class="flex items-center gap-2">&#9671; Portfolio Mining</div>
+            <div class="flex items-center gap-2">&#9671; Claim Charts</div>
+            <div class="flex items-center gap-2">&#9671; Global Filing</div>
+          </div>
+          <div class="text-[10px] font-mono uppercase tracking-widest text-[#7b52ba] flex items-center gap-1.5">
+            Scroll to explore the studio &darr;
+          </div>
+        </div>
+
+        <div class="mt-8 flex flex-col sm:flex-row gap-3">
+          <a href="#contact" class="bg-[#16122d] text-white px-6 py-4 text-xs font-mono uppercase tracking-wider text-center hover:bg-[#7b52ba] transition-colors shadow-sm">
+            Request a portfolio audit &rarr;
+          </a>
+          <a href="#services" class="border border-[#16122d] text-[#16122d] px-6 py-4 text-xs font-mono uppercase tracking-wider text-center hover:bg-white transition-colors">
+            View services
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Marquee / Ticker -->
+  <div class="border-b border-[#e6e2f3] bg-white py-4 overflow-hidden">
+    <div class="max-w-[1400px] mx-auto px-6 mb-2">
+      <span class="text-[10px] font-mono uppercase tracking-widest text-[#7b52ba] font-semibold">&sect; In practice &middot; Across the IP value chain</span>
+    </div>
+    <div class="marquee text-xs font-mono uppercase tracking-widest text-[#16122d] flex gap-8">
+      <span>Patent Monetization <span class="text-[#7b52ba]">&#10022;</span></span>
+      <span>Prior Art <span class="text-[#7b52ba]">&#10022;</span></span>
+      <span>Freedom to Operate <span class="text-[#7b52ba]">&#10022;</span></span>
+      <span>Claim Charts <span class="text-[#7b52ba]">&#10022;</span></span>
+      <span>Reverse Engineering <span class="text-[#7b52ba]">&#10022;</span></span>
+      <span>Portfolio Mining <span class="text-[#7b52ba]">&#10022;</span></span>
+      <span>Global Filing <span class="text-[#7b52ba]">&#10022;</span></span>
+      <span>Invalidation <span class="text-[#7b52ba]">&#10022;</span></span>
+      <span>EoU Analysis <span class="text-[#7b52ba]">&#10022;</span></span>
+      <span>Patent Monetization <span class="text-[#7b52ba]">&#10022;</span></span>
+      <span>Prior Art <span class="text-[#7b52ba]">&#10022;</span></span>
+      <span>Freedom to Operate <span class="text-[#7b52ba]">&#10022;</span></span>
+      <span>Claim Charts <span class="text-[#7b52ba]">&#10022;</span></span>
+      <span>Reverse Engineering <span class="text-[#7b52ba]">&#10022;</span></span>
+      <span>Portfolio Mining <span class="text-[#7b52ba]">&#10022;</span></span>
+      <span>Global Filing <span class="text-[#7b52ba]">&#10022;</span></span>
+      <span>Invalidation <span class="text-[#7b52ba]">&#10022;</span></span>
+      <span>EoU Analysis <span class="text-[#7b52ba]">&#10022;</span></span>
+    </div>
+  </div>
+
+  <!-- § I · Practice Areas -->
+  <section id="services" class="max-w-[1400px] mx-auto px-6 sm:px-10 py-24 border-b border-[#e6e2f3]">
+    <div class="mb-16">
+      <div class="text-[11px] font-mono uppercase tracking-widest text-[#7b52ba] mb-2 font-semibold">&sect; I &middot; Practice areas</div>
+      <h2 class="font-serif text-3xl sm:text-5xl text-[#16122d]">Four practices, one continuous IP value chain.</h2>
+    </div>
+
+    <div class="space-y-28">
+      
+      <!-- Practice 1: Patent Monetization -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-stretch border-t border-[#e6e2f3] pt-14">
+        <div class="lg:col-span-5 flex flex-col justify-between">
+          <div>
+            <h3 class="font-serif text-5xl sm:text-6xl text-[#16122d] mb-3">Patent<br />Monetization</h3>
+            <p class="text-[#68617d] text-base font-light mb-8">Extract the commercial value locked inside your portfolio.</p>
+          </div>
+          <div class="divide-y divide-[#e6e2f3] border-y border-[#e6e2f3] font-mono text-[11px] uppercase tracking-wider text-[#16122d]">
+            <div class="py-3 flex justify-between hover:text-[#7b52ba] transition-colors cursor-default"><span>Assets Mining</span><span>&rarr;</span></div>
+            <div class="py-3 flex justify-between hover:text-[#7b52ba] transition-colors cursor-default"><span>Portfolio Management</span><span>&rarr;</span></div>
+            <div class="py-3 flex justify-between hover:text-[#7b52ba] transition-colors cursor-default"><span>Evidence of Use (EoU)</span><span>&rarr;</span></div>
+            <div class="py-3 flex justify-between hover:text-[#7b52ba] transition-colors cursor-default"><span>Infringement Analysis</span><span>&rarr;</span></div>
+            <div class="py-3 flex justify-between hover:text-[#7b52ba] transition-colors cursor-default"><span>Strength (HML) Analysis</span><span>&rarr;</span></div>
+            <div class="py-3 flex justify-between hover:text-[#7b52ba] transition-colors cursor-default"><span>Categorization</span><span>&rarr;</span></div>
+            <div class="py-3 flex justify-between hover:text-[#7b52ba] transition-colors cursor-default"><span>Tagging</span><span>&rarr;</span></div>
+          </div>
+        </div>
+        <div class="lg:col-span-7 relative min-h-[420px] bg-[#16122d] overflow-hidden group shadow-lg">
+          <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1400&q=85" alt="Silicon, mapped to claim scope" class="w-full h-full object-cover opacity-85 group-hover:scale-105 transition-transform duration-700" />
+          <div class="absolute inset-0 bg-gradient-to-t from-[#16122d]/80 via-transparent to-transparent"></div>
+          <div class="absolute bottom-5 left-6 text-[11px] font-mono uppercase tracking-widest text-purple-200 bg-[#16122d]/80 px-3.5 py-2 backdrop-blur-md border border-purple-500/20">
+            Fig. 002 &mdash; Silicon, mapped to claim scope.
+          </div>
+        </div>
+      </div>
+
+      <!-- Practice 2: Prior Art & Search -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-stretch border-t border-[#e6e2f3] pt-14">
+        <div class="lg:col-span-7 order-2 lg:order-1 relative min-h-[420px] bg-[#16122d] overflow-hidden group shadow-lg">
+          <img src="https://images.unsplash.com/photo-1505664194779-8beaceb93744?auto=format&fit=crop&w=1400&q=85" alt="The record, read carefully" class="w-full h-full object-cover opacity-85 group-hover:scale-105 transition-transform duration-700" />
+          <div class="absolute inset-0 bg-gradient-to-t from-[#16122d]/80 via-transparent to-transparent"></div>
+          <div class="absolute bottom-5 left-6 text-[11px] font-mono uppercase tracking-widest text-purple-200 bg-[#16122d]/80 px-3.5 py-2 backdrop-blur-md border border-purple-500/20">
+            Fig. 003 &mdash; The record, read carefully.
+          </div>
+        </div>
+        <div class="lg:col-span-5 order-1 lg:order-2 flex flex-col justify-between">
+          <div>
+            <h3 class="font-serif text-5xl sm:text-6xl text-[#16122d] mb-3">Prior Art &<br />Search</h3>
+            <p class="text-[#68617d] text-base font-light mb-8">Know exactly where your idea sits in the historical record.</p>
+          </div>
+          <div class="divide-y divide-[#e6e2f3] border-y border-[#e6e2f3] font-mono text-[11px] uppercase tracking-wider text-[#16122d]">
+            <div class="py-3 flex justify-between hover:text-[#7b52ba] transition-colors cursor-default"><span>Prior Art Searches</span><span>&rarr;</span></div>
+            <div class="py-3 flex justify-between hover:text-[#7b52ba] transition-colors cursor-default"><span>Novelty Searches</span><span>&rarr;</span></div>
+            <div class="py-3 flex justify-between hover:text-[#7b52ba] transition-colors cursor-default"><span>Patentability Searches</span><span>&rarr;</span></div>
+            <div class="py-3 flex justify-between hover:text-[#7b52ba] transition-colors cursor-default"><span>Invalidation Searches</span><span>&rarr;</span></div>
+            <div class="py-3 flex justify-between hover:text-[#7b52ba] transition-colors cursor-default"><span>Validation Searches</span><span>&rarr;</span></div>
+            <div class="py-3 flex justify-between hover:text-[#7b52ba] transition-colors cursor-default"><span>Landscape Searches</span><span>&rarr;</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Practice 3: Risk & Strategy -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-stretch border-t border-[#e6e2f3] pt-14">
+        <div class="lg:col-span-5 flex flex-col justify-between">
+          <div>
+            <h3 class="font-serif text-5xl sm:text-6xl text-[#16122d] mb-3">Risk &<br />Strategy</h3>
+            <p class="text-[#68617d] text-base font-light mb-8">Ship products with the legal terrain fully surveyed.</p>
+          </div>
+          <div class="divide-y divide-[#e6e2f3] border-y border-[#e6e2f3] font-mono text-[11px] uppercase tracking-wider text-[#16122d]">
+            <div class="py-3 flex justify-between hover:text-[#7b52ba] transition-colors cursor-default"><span>Freedom-to-Operate (FTO) Searches</span><span>&rarr;</span></div>
+            <div class="py-3 flex justify-between hover:text-[#7b52ba] transition-colors cursor-default"><span>Non-Infringement Analysis</span><span>&rarr;</span></div>
+            <div class="py-3 flex justify-between hover:text-[#7b52ba] transition-colors cursor-default"><span>Stress-testing product features</span><span>&rarr;</span></div>
+            <div class="py-3 flex justify-between hover:text-[#7b52ba] transition-colors cursor-default"><span>Design-around Strategy</span><span>&rarr;</span></div>
+          </div>
+        </div>
+        <div class="lg:col-span-7 relative min-h-[420px] bg-[#16122d] overflow-hidden group shadow-lg">
+          <img src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&w=1400&q=85" alt="Stress-testing, before the market does" class="w-full h-full object-cover opacity-85 group-hover:scale-105 transition-transform duration-700" />
+          <div class="absolute inset-0 bg-gradient-to-t from-[#16122d]/80 via-transparent to-transparent"></div>
+          <div class="absolute bottom-5 left-6 text-[11px] font-mono uppercase tracking-widest text-purple-200 bg-[#16122d]/80 px-3.5 py-2 backdrop-blur-md border border-purple-500/20">
+            Fig. 004 &mdash; Stress-testing, before the market does.
+          </div>
+        </div>
+      </div>
+
+      <!-- Practice 4: Filing & Prosecution -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-stretch border-t border-[#e6e2f3] pt-14">
+        <div class="lg:col-span-7 order-2 lg:order-1 relative min-h-[420px] bg-[#16122d] overflow-hidden group shadow-lg">
+          <img src="https://images.unsplash.com/photo-1450133064473-71024230f91b?auto=format&fit=crop&w=1400&q=85" alt="The signature that grants the claim" class="w-full h-full object-cover opacity-85 group-hover:scale-105 transition-transform duration-700" />
+          <div class="absolute inset-0 bg-gradient-to-t from-[#16122d]/80 via-transparent to-transparent"></div>
+          <div class="absolute bottom-5 left-6 text-[11px] font-mono uppercase tracking-widest text-purple-200 bg-[#16122d]/80 px-3.5 py-2 backdrop-blur-md border border-purple-500/20">
+            Fig. 005 &mdash; The signature that grants the claim.
+          </div>
+        </div>
+        <div class="lg:col-span-5 order-1 lg:order-2 flex flex-col justify-between">
+          <div>
+            <h3 class="font-serif text-5xl sm:text-6xl text-[#16122d] mb-3">Filing &<br />Prosecution</h3>
+            <p class="text-[#68617d] text-base font-light mb-8">Drafts that hold up. Prosecution that lands.</p>
+          </div>
+          <div class="divide-y divide-[#e6e2f3] border-y border-[#e6e2f3] font-mono text-[11px] uppercase tracking-wider text-[#16122d]">
+            <div class="py-3 flex justify-between hover:text-[#7b52ba] transition-colors cursor-default"><span>Patent Drafting</span><span>&rarr;</span></div>
+            <div class="py-3 flex justify-between hover:text-[#7b52ba] transition-colors cursor-default"><span>Global Patent Filing</span><span>&rarr;</span></div>
+            <div class="py-3 flex justify-between hover:text-[#7b52ba] transition-colors cursor-default"><span>Office Action Responses</span><span>&rarr;</span></div>
+            <div class="py-3 flex justify-between hover:text-[#7b52ba] transition-colors cursor-default"><span>Claim Formation</span><span>&rarr;</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- § II · Technologies -->
+  <section id="technologies" class="max-w-[1400px] mx-auto px-6 sm:px-10 py-24 border-b border-[#e6e2f3]">
+    <div class="mb-16">
+      <div class="text-[11px] font-mono uppercase tracking-widest text-[#7b52ba] mb-2 font-semibold">&sect; II &middot; Technologies</div>
+      <h2 class="font-serif text-5xl sm:text-7xl text-[#16122d] leading-[1.05]">
+        Technologies we work across, from <span class="italic text-[#7b52ba]">silicon to software.</span>
+      </h2>
+      <p class="mt-6 text-[#68617d] text-base max-w-3xl font-light">
+        67+ technical focus areas across seven domains. Deep specialisation in memory systems, semiconductors, AI, autonomous systems and communication standards &mdash; with the databases and researchers to back it up.
+      </p>
+    </div>
+
+    <!-- Domain T1 -->
+    <div class="py-12 border-t border-[#e6e2f3] grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+      <div class="lg:col-span-4">
+        <div class="text-[10px] font-mono uppercase tracking-widest text-[#68617d] mb-1">Domain &middot; T1</div>
+        <h3 class="font-serif text-3xl sm:text-4xl text-[#16122d]">Computer Science & Software</h3>
+        <div class="text-[11px] font-mono uppercase tracking-widest text-[#7b52ba] mt-2 font-semibold">31 focus areas</div>
+      </div>
+      <div class="lg:col-span-8 flex flex-wrap gap-2">
+        <span class="px-3 py-2 border border-[#e6e2f3] bg-white font-mono text-[11px] uppercase tracking-wide text-[#16122d] hover:border-[#7b52ba] transition-colors">Artificial Intelligence (AI)</span>
+        <span class="px-3 py-2 border border-[#e6e2f3] bg-white font-mono text-[11px] uppercase tracking-wide text-[#16122d] hover:border-[#7b52ba] transition-colors">AI / Machine Learning</span>
+        <span class="px-3 py-2 border border-[#e6e2f3] bg-white font-mono text-[11px] uppercase tracking-wide text-[#16122d] hover:border-[#7b52ba] transition-colors">Autonomous Driving Systems</span>
+        <span class="px-3 py-2 border border-[#e6e2f3] bg-white font-mono text-[11px] uppercase tracking-wide text-[#16122d] hover:border-[#7b52ba] transition-colors">Autonomous Technologies</span>
+        <span class="px-3 py-2 border border-[#e6e2f3] bg-white font-mono text-[11px] uppercase tracking-wide text-[#16122d] hover:border-[#7b52ba] transition-colors">Cloud Computing</span>
+        <span class="px-3 py-2 border border-[#e6e2f3] bg-white font-mono text-[11px] uppercase tracking-wide text-[#16122d] hover:border-[#7b52ba] transition-colors">Computer Architecture</span>
+        <span class="px-3 py-2 border border-[#e6e2f3] bg-white font-mono text-[11px] uppercase tracking-wide text-[#16122d] hover:border-[#7b52ba] transition-colors">Computer Graphics</span>
+        <span class="px-3 py-2 border border-[#e6e2f3] bg-white font-mono text-[11px] uppercase tracking-wide text-[#16122d] hover:border-[#7b52ba] transition-colors">Computer Networks</span>
+        <span class="px-3 py-2 border border-[#e6e2f3] bg-white font-mono text-[11px] uppercase tracking-wide text-[#16122d] hover:border-[#7b52ba] transition-colors">Computer Programming</span>
+        <span class="px-3 py-2 border border-[#e6e2f3] bg-white font-mono text-[11px] uppercase tracking-wide text-[#16122d] hover:border-[#7b52ba] transition-colors">Computer Processors</span>
+        <span class="px-3 py-2 border border-[#e6e2f3] bg-white font-mono text-[11px] uppercase tracking-wide text-[#16122d] hover:border-[#7b52ba] transition-colors">Computer Security</span>
+        <span class="px-3 py-2 border border-[#e6e2f3] bg-white font-mono text-[11px] uppercase tracking-wide text-[#16122d] hover:border-[#7b52ba] transition-colors">Cryptography</span>
+        <span class="px-3 py-2 border border-[#e6e2f3] bg-white font-mono text-[11px] uppercase tracking-wide text-[#16122d] hover:border-[#7b52ba] transition-colors">Driverless Cars</span>
+        <span class="px-3 py-2 border border-[#e6e2f3] bg-white font-mono text-[11px] uppercase tracking-wide text-[#16122d] hover:border-[#7b52ba] transition-colors">Graphical User Interface (GUI)</span>
+        <span class="px-3 py-2 border border-[#e6e2f3] bg-white font-mono text-[11px] uppercase tracking-wide text-[#16122d] hover:border-[#7b52ba] transition-colors">Heterogeneous Computing</span>
+        <span class="px-3 py-2 border border-[#e6e2f3] bg-white font-mono text-[11px] uppercase tracking-wide text-[#16122d] hover:border-[#7b52ba] transition-colors">Information Security</span>
+        <span class="px-3 py-2 border border-[#e6e2f3] bg-white font-mono text-[11px] uppercase tracking-wide text-[#16122d] hover:border-[#7b52ba] transition-colors">Instruction Set Architecture (ISA)</span>
+        <span class="px-3 py-2 border border-[#e6e2f3] bg-white font-mono text-[11px] uppercase tracking-wide text-[#16122d] hover:border-[#7b52ba] transition-colors">Internet of Things (IoT)</span>
+        <span class="px-3 py-2 border border-[#e6e2f3] bg-white font-mono text-[11px] uppercase tracking-wide text-[#16122d] hover:border-[#7b52ba] transition-colors">Machine Learning</span>
+        <span class="px-3 py-2 border border-[#e6e2f3] bg-white font-mono text-[11px] uppercase tracking-wide text-[#16122d] hover:border-[#7b52ba] transition-colors">Memory Management</span>
+        <span class="px-3 py-2 border border-[#e6e2f3] bg-white font-mono text-[11px] uppercase tracking-wide text-[#16122d] hover:border-[#7b52ba] transition-colors">Mobile Applications</span>
+        <span class="px-3 py-2 border border-[#e6e2f3] bg-white font-mono text-[11px] uppercase tracking-wide text-[#16122d] hover:border-[#7b52ba] transition-colors">Mobile Payments</span>
+        <span class="px-3 py-2 border border-[#e6e2f3] bg-white font-mono text-[11px] uppercase tracking-wide text-[#16122d] hover:border-[#7b52ba] transition-colors">Programming Languages</span>
+        <span class="px-3 py-2 border border-[#e6e2f3] bg-white font-mono text-[11px] uppercase tracking-wide text-[#16122d] hover:border-[#7b52ba] transition-colors">Recommendation Systems</span>
+        <span class="px-3 py-2 border border-[#e6e2f3] bg-white font-mono text-[11px] uppercase tracking-wide text-[#16122d] hover:border-[#7b52ba] transition-colors">Social Networks</span>
+        <span class="px-3 py-2 border border-[#e6e2f3] bg-white font-mono text-[11px] uppercase tracking-wide text-[#16122d] hover:border-[#7b52ba] transition-colors">Software Engineering</span>
+        <span class="px-3 py-2 border border-[#e6e2f3] bg-white font-mono text-[11px] uppercase tracking-wide text-[#16122d] hover:border-[#7b52ba] transition-colors">System Software</span>
+        <span class="px-3 py-2 border border-[#e6e2f3] bg-white font-mono text-[11px] uppercase tracking-wide text-[#16122d] hover:border-[#7b52ba] transition-colors">Virtual Reality (VR)</span>
+        <span class="px-3 py-2 border border-[#e6e2f3] bg-white font-mono text-[11px] uppercase tracking-wide text-[#16122d] hover:border-[#7b52ba] transition-colors">Augmented Reality (AR)</span>
+        <span class="px-3 py-2 border border-[#e6e2f3] bg-white font-mono text-[11px] uppercase tracking-wide text-[#16122d] hover:border-[#7b52ba] transition-colors">Wearables</span>
+        <span class="px-3 py-2 border border-[#e6e2f3] bg-white font-mono text-[11px] uppercase tracking-wide text-[#16122d] hover:border-[#7b52ba] transition-colors">Wireless & Mobile Communication</span>
+      </div>
+    </div>
+
+    <!-- Domain T2 -->
+    <div class="py-12 border-t border-[#e6e2f3] grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+      <div class="lg:col-span-4">
+        <div class="text-[10px] font-mono uppercase tracking-widest text-[#68617d] mb-1">Domain &middot; T2</div>
+        <h3 class="font-serif text-3xl sm:text-4xl text-[#16122d]">Memory & Semiconductor</h3>
+        <div class="text-[11px] font-mono uppercase tracking-widest text-[#7b52ba] mt-2 font-semibold">6 focus areas</div>
+      </div>
+      <div class="lg:col-span-8 flex flex-wrap gap-2">
+        <span class="px-3 py-2 border border-[#e6e2f3] bg-white font-mono text-[11px] uppercase tracking-wide text-[#16122d] hover:border-[#7b52ba] transition-colors">AI Accelerator</span>
+        <span class="px-3 py-2 border border-[#e6e2f3] bg-white font-mono text-[11px] uppercase tracking-wide text-[#16122d] hover:border-[#7b52ba] transition-colors">Memory Systems</span>
+        <span class="px-3 py-2 border border-[#e6e2f3] bg-white font-mono text-[11px] uppercase tracking-wide text-[#16122d] hover:border-[#7b52ba] transition-colors">Different Memory Standards</span>
+        <span class="px-3 py-2 border border-[#e6e2f3] bg-white font-mono text-[11px] uppercase tracking-wide text-[#16122d] hover:border-[#7b52ba] transition-colors">Semiconductor Fabrication</span>
+        <span class="px-3 py-2 border border-[#e6e2f3] bg-white font-mono text-[11px] uppercase tracking-wide text-[#16122d] hover:border-[#7b52ba] transition-colors">Semiconductor Materials</span>
+        <span class="px-3 py-2 border border-[#e6e2f3] bg-white font-mono text-[11px] uppercase tracking-wide text-[#16122d] hover:border-[#7b52ba] transition-colors">PIM (Processing-in-Memory)</span>
+      </div>
+    </div>
+
+    <!-- Domain T3 -->
+    <div class="py-12 border-t border-[#e6e2f3] grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+      <div class="lg:col-span-4">
+        <div class="text-[10px] font-mono uppercase tracking-widest text-[#68617d] mb-1">Domain &middot; T3</div>
+        <h3 class="font-serif text-3xl sm:text-4xl text-[#16122d]">Memory Standards</h3>
+        <div class="text-[11px] font-mono uppercase tracking-widest text-[#7b52ba] mt-2 font-semibold">12 focus areas</div>
+      </div>
+      <div class="lg:col-span-8 flex flex-wrap gap-2">
+        <span class="px-3 py-2 border border-[#e6e2f3] bg-white font-mono text-[11px] uppercase tracking-wide text-[#16122d] hover:border-[#7b52ba] transition-colors">DDR4</span>
+        <span class="px-3 py-2 border border-[#e6e2f3] bg-white font-mono text-[11px] uppercase tracking-wide text-[#16122d] hover:border-[#7b52ba] transition-colors">DDR5</span>
+        <span class="px-3 py-2 border border-[#e6e2f3] bg-white font-mono text-[11px] uppercase tracking-wide text-[#16122d] hover:border-[#7b52ba] transition-colors">LPDDR4</span>
+        <span class="px-3 py-2 border border-[#e6e2f3] bg-white font-mono text-[11px] uppercase tracking-wide text-[#16122d] hover:border-[#7b52ba] transition-colors">LPDDR5</span>
+        <span class="px-3 py-2 border border-[#e6e2f3] bg-white font-mono text-[11px] uppercase tracking-wide text-[#16122d] hover:border-[#7b52ba] transition-colors">HBM3</span>
+        <span class="px-3 py-2 border border-[#e6e2f3] bg-white font-mono text-[11px] uppercase tracking-wide text-[#16122d] hover:border-[#7b52ba] transition-colors">GDDR6</span>
+        <span class="px-3 py-2 border border-[#e6e2f3] bg-white font-mono text-[11px] uppercase tracking-wide text-[#16122d] hover:border-[#7b52ba] transition-colors">eMMC</span>
+        <span class="px-3 py-2 border border-[#e6e2f3] bg-white font-mono text-[11px] uppercase tracking-wide text-[#16122d] hover:border-[#7b52ba] transition-colors">UFS</span>
+        <span class="px-3 py-2 border border-[#e6e2f3] bg-white font-mono text-[11px] uppercase tracking-wide text-[#16122d] hover:border-[#7b52ba] transition-colors">NVM</span>
+        <span class="px-3 py-2 border border-[#e6e2f3] bg-white font-mono text-[11px] uppercase tracking-wide text-[#16122d] hover:border-[#7b52ba] transition-colors">ONFI</span>
+        <span class="px-3 py-2 border border-[#e6e2f3] bg-white font-mono text-[11px] uppercase tracking-wide text-[#16122d] hover:border-[#7b52ba] transition-colors">NVDIMM-N</span>
+        <span class="px-3 py-2 border border-[#e6e2f3] bg-white font-mono text-[11px] uppercase tracking-wide text-[#16122d] hover:border-[#7b52ba] transition-colors">NVDIMM-P</span>
+      </div>
+    </div>
+
+    <!-- Domain T4 -->
+    <div class="py-12 border-t border-[#e6e2f3] grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+      <div class="lg:col-span-4">
+        <div class="text-[10px] font-mono uppercase tracking-widest text-[#68617d] mb-1">Domain &middot; T4</div>
+        <h3 class="font-serif text-3xl sm:text-4xl text-[#16122d]">Communication Standards</h3>
+        <div class="text-[11px] font-mono uppercase tracking-widest text-[#7b52ba] mt-2 font-semibold">2 focus areas</div>
+      </div>
+      <div class="lg:col-span-8 flex flex-wrap gap-2">
+        <span class="px-3 py-2 border border-[#e6e2f3] bg-white font-mono text-[11px] uppercase tracking-wide text-[#16122d] hover:border-[#7b52ba] transition-colors">3GPP Standards</span>
+        <span class="px-3 py-2 border border-[#e6e2f3] bg-white font-mono text-[11px] uppercase tracking-wide text-[#16122d] hover:border-[#7b52ba] transition-colors">Payments</span>
+      </div>
+    </div>
+
+    <!-- Domain T5 -->
+    <div class="py-12 border-t border-[#e6e2f3] grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+      <div class="lg:col-span-4">
+        <div class="text-[10px] font-mono uppercase tracking-widest text-[#68617d] mb-1">Domain &middot; T5</div>
+        <h3 class="font-serif text-3xl sm:text-4xl text-[#16122d]">Electronics & Hardware</h3>
+        <div class="text-[11px] font-mono uppercase tracking-widest text-[#7b52ba] mt-2 font-semibold">7 focus areas</div>
+      </div>
+      <div class="lg:col-span-8 flex flex-wrap gap-2">
+        <span class="px-3 py-2 border border-[#e6e2f3] bg-white font-mono text-[11px] uppercase tracking-wide text-[#16122d] hover:border-[#7b52ba] transition-colors">CPU</span>
+        <span class="px-3 py-2 border border-[#e6e2f3] bg-white font-mono text-[11px] uppercase tracking-wide text-[#16122d] hover:border-[#7b52ba] transition-colors">Processors</span>
+        <span class="px-3 py-2 border border-[#e6e2f3] bg-white font-mono text-[11px] uppercase tracking-wide text-[#16122d] hover:border-[#7b52ba] transition-colors">Microcontrollers</span>
+        <span class="px-3 py-2 border border-[#e6e2f3] bg-white font-mono text-[11px] uppercase tracking-wide text-[#16122d] hover:border-[#7b52ba] transition-colors">Microgrid</span>
+        <span class="px-3 py-2 border border-[#e6e2f3] bg-white font-mono text-[11px] uppercase tracking-wide text-[#16122d] hover:border-[#7b52ba] transition-colors">LED Circuits</span>
+        <span class="px-3 py-2 border border-[#e6e2f3] bg-white font-mono text-[11px] uppercase tracking-wide text-[#16122d] hover:border-[#7b52ba] transition-colors">Electrical Circuits</span>
+        <span class="px-3 py-2 border border-[#e6e2f3] bg-white font-mono text-[11px] uppercase tracking-wide text-[#16122d] hover:border-[#7b52ba] transition-colors">Electronic Circuits</span>
+      </div>
+    </div>
+
+    <!-- Domain T6 -->
+    <div class="py-12 border-t border-[#e6e2f3] grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+      <div class="lg:col-span-4">
+        <div class="text-[10px] font-mono uppercase tracking-widest text-[#68617d] mb-1">Domain &middot; T6</div>
+        <h3 class="font-serif text-3xl sm:text-4xl text-[#16122d]">Energy & Renewable</h3>
+        <div class="text-[11px] font-mono uppercase tracking-widest text-[#7b52ba] mt-2 font-semibold">3 focus areas</div>
+      </div>
+      <div class="lg:col-span-8 flex flex-wrap gap-2">
+        <span class="px-3 py-2 border border-[#e6e2f3] bg-white font-mono text-[11px] uppercase tracking-wide text-[#16122d] hover:border-[#7b52ba] transition-colors">Solar PV Systems</span>
+        <span class="px-3 py-2 border border-[#e6e2f3] bg-white font-mono text-[11px] uppercase tracking-wide text-[#16122d] hover:border-[#7b52ba] transition-colors">Solar PV Devices</span>
+        <span class="px-3 py-2 border border-[#e6e2f3] bg-white font-mono text-[11px] uppercase tracking-wide text-[#16122d] hover:border-[#7b52ba] transition-colors">Solar Devices</span>
+      </div>
+    </div>
+
+    <!-- Domain T7 -->
+    <div class="py-12 border-t border-[#e6e2f3] grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+      <div class="lg:col-span-4">
+        <div class="text-[10px] font-mono uppercase tracking-widest text-[#68617d] mb-1">Domain &middot; T7</div>
+        <h3 class="font-serif text-3xl sm:text-4xl text-[#16122d]">Consumer & Miscellaneous</h3>
+        <div class="text-[11px] font-mono uppercase tracking-widest text-[#7b52ba] mt-2 font-semibold">6 focus areas</div>
+      </div>
+      <div class="lg:col-span-8 flex flex-wrap gap-2">
+        <span class="px-3 py-2 border border-[#e6e2f3] bg-white font-mono text-[11px] uppercase tracking-wide text-[#16122d] hover:border-[#7b52ba] transition-colors">Camera Technologies</span>
+        <span class="px-3 py-2 border border-[#e6e2f3] bg-white font-mono text-[11px] uppercase tracking-wide text-[#16122d] hover:border-[#7b52ba] transition-colors">Projector Technologies</span>
+        <span class="px-3 py-2 border border-[#e6e2f3] bg-white font-mono text-[11px] uppercase tracking-wide text-[#16122d] hover:border-[#7b52ba] transition-colors">Printer Technologies</span>
+        <span class="px-3 py-2 border border-[#e6e2f3] bg-white font-mono text-[11px] uppercase tracking-wide text-[#16122d] hover:border-[#7b52ba] transition-colors">E-commerce</span>
+        <span class="px-3 py-2 border border-[#e6e2f3] bg-white font-mono text-[11px] uppercase tracking-wide text-[#16122d] hover:border-[#7b52ba] transition-colors">Electric Vehicles (EV)</span>
+        <span class="px-3 py-2 border border-[#e6e2f3] bg-white font-mono text-[11px] uppercase tracking-wide text-[#16122d] hover:border-[#7b52ba] transition-colors">Fitness Technologies</span>
+      </div>
+    </div>
+
+    <!-- Research Stack -->
+    <div class="mt-16 pt-12 border-t-2 border-[#16122d] grid grid-cols-1 md:grid-cols-12 gap-8">
+      <div class="md:col-span-4">
+        <div class="text-[10px] font-mono uppercase tracking-widest text-[#7b52ba] font-semibold">Research Stack</div>
+        <h4 class="font-serif text-2xl text-[#16122d] mt-1">The databases we actually use.</h4>
+      </div>
+      <div class="md:col-span-4">
+        <div class="text-[11px] font-mono uppercase tracking-widest text-[#68617d] mb-3">Patent databases</div>
+        <div class="flex flex-wrap gap-2 text-xs font-mono text-[#16122d]">
+          <span class="bg-[#eeeaf7] px-2.5 py-1 font-medium">Derwent Innovation</span>
+          <span class="bg-[#eeeaf7] px-2.5 py-1 font-medium">USPTO</span>
+          <span class="bg-[#eeeaf7] px-2.5 py-1 font-medium">Google Patents</span>
+          <span class="bg-[#eeeaf7] px-2.5 py-1 font-medium">WIPO</span>
+          <span class="bg-[#eeeaf7] px-2.5 py-1 font-medium">Espacenet</span>
+          <span class="bg-[#eeeaf7] px-2.5 py-1 font-medium">Patsnap</span>
+        </div>
+      </div>
+      <div class="md:col-span-4">
+        <div class="text-[11px] font-mono uppercase tracking-widest text-[#68617d] mb-3">Non-patent sources</div>
+        <div class="flex flex-wrap gap-2 text-xs font-mono text-[#16122d]">
+          <span class="bg-[#eeeaf7] px-2.5 py-1 font-medium">IEEE</span>
+          <span class="bg-[#eeeaf7] px-2.5 py-1 font-medium">Google Scholar</span>
+          <span class="bg-[#eeeaf7] px-2.5 py-1 font-medium">GitHub Repositories</span>
+          <span class="bg-[#eeeaf7] px-2.5 py-1 font-medium">Vendor Datasheets</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- § III · Manifesto -->
+  <section id="manifesto" class="max-w-[1400px] mx-auto px-6 sm:px-10 py-24 border-b border-[#e6e2f3]">
+    <div class="mb-16">
+      <div class="text-[11px] font-mono uppercase tracking-widest text-[#7b52ba] mb-2 font-semibold">&sect; III &middot; Manifesto</div>
+      <h2 class="font-serif text-3xl sm:text-5xl text-[#16122d]">We treat patents the way a great editor treats a manuscript.</h2>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div class="border-t-2 border-[#16122d] pt-6">
+        <div class="text-[10px] font-mono uppercase tracking-widest text-[#7b52ba] mb-4 font-semibold">Movement &middot; I</div>
+        <h4 class="font-serif text-2xl text-[#16122d] leading-snug mb-4">An idea is only as valuable as the claim that protects it.</h4>
+        <p class="text-sm text-[#68617d] font-light leading-relaxed">We write claims that survive prosecution and litigation. Not templates &mdash; bespoke drafts, engineered around the invention and the market it enters.</p>
+      </div>
+
+      <div class="border-t-2 border-[#16122d] pt-6">
+        <div class="text-[10px] font-mono uppercase tracking-widest text-[#7b52ba] mb-4 font-semibold">Movement &middot; II</div>
+        <h4 class="font-serif text-2xl text-[#16122d] leading-snug mb-4">Every portfolio hides a licensing case waiting to be built.</h4>
+        <p class="text-sm text-[#68617d] font-light leading-relaxed">Through portfolio mining, EoU mapping and reverse engineering, we surface the assets that are already infringed &mdash; and translate them into monetizable positions.</p>
+      </div>
+
+      <div class="border-t-2 border-[#16122d] pt-6">
+        <div class="text-[10px] font-mono uppercase tracking-widest text-[#7b52ba] mb-4 font-semibold">Movement &middot; III</div>
+        <h4 class="font-serif text-2xl text-[#16122d] leading-snug mb-4">Read the record before you ship the product.</h4>
+        <p class="text-sm text-[#68617d] font-light leading-relaxed">Prior-art searches, FTO opinions and stress tests. We tell you what is out there &mdash; plainly, without softening the verdict &mdash; so you deploy capital with clarity.</p>
+      </div>
+
+      <div class="border-t-2 border-[#16122d] pt-6">
+        <div class="text-[10px] font-mono uppercase tracking-widest text-[#7b52ba] mb-4 font-semibold">Movement &middot; IV</div>
+        <h4 class="font-serif text-2xl text-[#16122d] leading-snug mb-4">File once. File everywhere. File to grant.</h4>
+        <p class="text-sm text-[#68617d] font-light leading-relaxed">Global drafting and prosecution across the USPTO, EPO, JPO, CNIPA and the Indian Patent Office. One studio. One editor. One coherent portfolio.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- § IV · Approach -->
+  <section id="approach" class="max-w-[1400px] mx-auto px-6 sm:px-10 py-24 border-b border-[#e6e2f3]">
+    <div class="mb-16">
+      <div class="text-[11px] font-mono uppercase tracking-widest text-[#7b52ba] mb-2 font-semibold">&sect; IV &middot; Approach</div>
+      <h2 class="font-serif text-3xl sm:text-5xl text-[#16122d]">How we work, in four movements.</h2>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div class="border border-[#e6e2f3] p-7 bg-white flex flex-col justify-between shadow-sm hover:border-[#7b52ba] transition-colors">
+        <div>
+          <div class="flex justify-between items-center mb-6">
+            <span class="font-serif text-3xl text-purple-300">&alpha;</span>
+            <span class="text-[10px] font-mono uppercase tracking-widest text-[#7b52ba] font-semibold">Step 01</span>
+          </div>
+          <h4 class="font-serif text-2xl text-[#16122d] mb-2">Intake</h4>
+          <p class="text-xs text-[#68617d] font-light leading-relaxed">A 30-minute conversation. Portfolio, product, business model. We size the problem before scoping the work.</p>
+        </div>
+      </div>
+
+      <div class="border border-[#e6e2f3] p-7 bg-white flex flex-col justify-between shadow-sm hover:border-[#7b52ba] transition-colors">
+        <div>
+          <div class="flex justify-between items-center mb-6">
+            <span class="font-serif text-3xl text-purple-300">&beta;</span>
+            <span class="text-[10px] font-mono uppercase tracking-widest text-[#7b52ba] font-semibold">Step 02</span>
+          </div>
+          <h4 class="font-serif text-2xl text-[#16122d] mb-2">Diagnosis</h4>
+          <p class="text-xs text-[#68617d] font-light leading-relaxed">Prior-art landscape, portfolio audit, or FTO &mdash; a written diagnosis with a clear verdict, not a hedged memo.</p>
+        </div>
+      </div>
+
+      <div class="border border-[#e6e2f3] p-7 bg-white flex flex-col justify-between shadow-sm hover:border-[#7b52ba] transition-colors">
+        <div>
+          <div class="flex justify-between items-center mb-6">
+            <span class="font-serif text-3xl text-purple-300">&gamma;</span>
+            <span class="text-[10px] font-mono uppercase tracking-widest text-[#7b52ba] font-semibold">Step 03</span>
+          </div>
+          <h4 class="font-serif text-2xl text-[#16122d] mb-2">Execution</h4>
+          <p class="text-xs text-[#68617d] font-light leading-relaxed">Drafting, filing, EoU builds, sales decks. A single accountable partner from your side of the desk.</p>
+        </div>
+      </div>
+
+      <div class="border border-[#e6e2f3] p-7 bg-white flex flex-col justify-between shadow-sm hover:border-[#7b52ba] transition-colors">
+        <div>
+          <div class="flex justify-between items-center mb-6">
+            <span class="font-serif text-3xl text-purple-300">&delta;</span>
+            <span class="text-[10px] font-mono uppercase tracking-widest text-[#7b52ba] font-semibold">Step 04</span>
+          </div>
+          <h4 class="font-serif text-2xl text-[#16122d] mb-2">Handoff</h4>
+          <p class="text-xs text-[#68617d] font-light leading-relaxed">You leave with claim charts, filings, and a monetization thesis your CFO and counsel can both defend.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-14 pt-8 border-t border-[#e6e2f3] grid grid-cols-2 md:grid-cols-4 gap-6 text-center font-mono">
+      <div>
+        <div class="font-serif text-4xl text-[#16122d]">300+</div>
+        <div class="text-[10px] uppercase tracking-widest text-[#68617d] mt-1">Patents drafted & filed</div>
+      </div>
+      <div>
+        <div class="font-serif text-4xl text-[#7b52ba]">40+</div>
+        <div class="text-[10px] uppercase tracking-widest text-[#68617d] mt-1">Portfolios audited</div>
+      </div>
+      <div>
+        <div class="font-serif text-4xl text-[#16122d]">9</div>
+        <div class="text-[10px] uppercase tracking-widest text-[#68617d] mt-1">Jurisdictions</div>
+      </div>
+      <div>
+        <div class="font-serif text-4xl text-[#7b52ba]">1</div>
+        <div class="text-[10px] uppercase tracking-widest text-[#68617d] mt-1">Accountable partner</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- § V · Locations -->
+  <section id="locations" class="max-w-[1400px] mx-auto px-6 sm:px-10 py-24 border-b border-[#e6e2f3]">
+    <div class="mb-16">
+      <div class="text-[11px] font-mono uppercase tracking-widest text-[#7b52ba] mb-2 font-semibold">&sect; V &middot; Locations</div>
+      <h2 class="font-serif text-3xl sm:text-5xl text-[#16122d]">Studios across India. Opening in USA & China.</h2>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
+      <div class="border border-[#e6e2f3] p-6 bg-white flex flex-col justify-between shadow-sm">
+        <div>
+          <div class="flex justify-between items-center text-[10px] font-mono uppercase tracking-widest text-[#68617d] mb-4">
+            <span>01</span>
+            <span class="text-[#7b52ba] font-semibold">HQ</span>
+          </div>
+          <h4 class="font-serif text-2xl text-[#16122d]">New Delhi</h4>
+          <div class="text-[11px] font-mono text-[#68617d] mb-3">India</div>
+          <p class="text-xs text-[#68617d] font-light">The studio's flagship. Portfolio, filing & prosecution.</p>
+        </div>
+        <div class="text-[10px] font-mono text-[#7b52ba] mt-6">28.61&deg;N &middot; 77.20&deg;E</div>
+      </div>
+
+      <div class="border border-[#e6e2f3] p-6 bg-white flex flex-col justify-between shadow-sm">
+        <div>
+          <div class="flex justify-between items-center text-[10px] font-mono uppercase tracking-widest text-[#68617d] mb-4">
+            <span>02</span>
+            <span>Studio</span>
+          </div>
+          <h4 class="font-serif text-2xl text-[#16122d]">Gurugram</h4>
+          <div class="text-[11px] font-mono text-[#68617d] mb-3">India</div>
+          <p class="text-xs text-[#68617d] font-light">Engineering-heavy studio for reverse-engineering & EoU.</p>
+        </div>
+        <div class="text-[10px] font-mono text-[#7b52ba] mt-6">28.45&deg;N &middot; 77.02&deg;E</div>
+      </div>
+
+      <div class="border border-[#e6e2f3] p-6 bg-white flex flex-col justify-between shadow-sm">
+        <div>
+          <div class="flex justify-between items-center text-[10px] font-mono uppercase tracking-widest text-[#68617d] mb-4">
+            <span>03</span>
+            <span>Studio</span>
+          </div>
+          <h4 class="font-serif text-2xl text-[#16122d]">Agra</h4>
+          <div class="text-[11px] font-mono text-[#68617d] mb-3">India</div>
+          <p class="text-xs text-[#68617d] font-light">Prior art & prosecution support.</p>
+        </div>
+        <div class="text-[10px] font-mono text-[#7b52ba] mt-6">27.17&deg;N &middot; 78.00&deg;E</div>
+      </div>
+
+      <div class="border border-[#e6e2f3] p-6 bg-white flex flex-col justify-between shadow-sm">
+        <div>
+          <div class="flex justify-between items-center text-[10px] font-mono uppercase tracking-widest text-[#68617d] mb-4">
+            <span>04</span>
+            <span class="text-amber-600 font-semibold">Opening</span>
+          </div>
+          <h4 class="font-serif text-2xl text-[#16122d]">New York</h4>
+          <div class="text-[11px] font-mono text-[#68617d] mb-3">USA &mdash; opening 2026</div>
+          <p class="text-xs text-[#68617d] font-light">US prosecution & licensing operations.</p>
+        </div>
+        <div class="text-[10px] font-mono text-gray-400 mt-6">40.71&deg;N &middot; 74.00&deg;W</div>
+      </div>
+
+      <div class="border border-[#e6e2f3] p-6 bg-white flex flex-col justify-between shadow-sm">
+        <div>
+          <div class="flex justify-between items-center text-[10px] font-mono uppercase tracking-widest text-[#68617d] mb-4">
+            <span>05</span>
+            <span class="text-amber-600 font-semibold">Opening</span>
+          </div>
+          <h4 class="font-serif text-2xl text-[#16122d]">Shenzhen</h4>
+          <div class="text-[11px] font-mono text-[#68617d] mb-3">China &mdash; opening 2026</div>
+          <p class="text-xs text-[#68617d] font-light">APAC monetization & hardware IP.</p>
+        </div>
+        <div class="text-[10px] font-mono text-gray-400 mt-6">22.54&deg;N &middot; 114.05&deg;E</div>
+      </div>
+    </div>
+    <div class="mt-8 text-center text-[11px] font-mono uppercase tracking-widest text-[#68617d]">
+      3 active studios &middot; 2 openings 2026 &middot; one accountable partner
+    </div>
+  </section>
+
+  <!-- § VI · Contact (Direct Line & Partner Mandate - No Form) -->
+  <section id="contact" class="max-w-[1400px] mx-auto px-6 sm:px-10 py-24 border-b border-[#e6e2f3]">
+    <div class="mb-12">
+      <div class="text-[11px] font-mono uppercase tracking-widest text-[#7b52ba] mb-2 font-semibold">&sect; VI &middot; Contact & Consultation</div>
+      <h2 class="font-serif text-4xl sm:text-6xl text-[#16122d] leading-[1.05]">
+        Tell us about the invention. We reply within one business day.
+      </h2>
+    </div>
+
+    <!-- Direct Contact Studio Card -->
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+      <div class="lg:col-span-7 bg-[#16122d] text-white p-8 sm:p-12 flex flex-col justify-between shadow-xl">
+        <div>
+          <div class="inline-flex items-center gap-2 px-3 py-1 bg-white/10 text-purple-200 text-[10px] font-mono uppercase tracking-widest mb-8">
+            [ Confidential Direct Partner Line ]
+          </div>
+          
+          <h3 class="font-serif text-3xl sm:text-4xl text-white mb-6">
+            Schedule a 30-minute diagnostic session with an IP partner.
+          </h3>
+          <p class="text-gray-300 font-light text-base leading-relaxed mb-8 max-w-xl">
+            Whether you need rapid prior art discovery, a litigation-grade EoU claim chart, or a global filing roadmap — speak directly with our core engineering and patent counsel.
+          </p>
+        </div>
+
+        <div class="pt-8 border-t border-white/15 flex flex-col sm:flex-row gap-4">
+          <a href="mailto:info@optimize-ip.com" class="inline-flex items-center justify-center gap-2 bg-[#7b52ba] hover:bg-[#9366ea] text-white px-7 py-4 text-xs font-mono uppercase tracking-wider transition-colors">
+            Email Partner &rarr;
+          </a>
+          <a href="tel:+919758263443" class="inline-flex items-center justify-center gap-2 border border-white/30 text-white hover:bg-white/10 px-7 py-4 text-xs font-mono uppercase tracking-wider transition-colors">
+            Call +91 9758 263 443
+          </a>
+        </div>
+      </div>
+
+      <div class="lg:col-span-5 bg-white border border-[#e6e2f3] p-8 sm:p-12 flex flex-col justify-between shadow-sm">
+        <div>
+          <div class="text-[10px] font-mono uppercase tracking-widest text-[#7b52ba] mb-4 font-semibold">What to expect</div>
+          <ul class="text-xs font-mono text-[#1f1b2e] space-y-4">
+            <li class="flex items-start gap-2">
+              <span class="text-[#7b52ba] font-bold">&middot;</span>
+              <span>A reply from a senior partner, never an automated bot.</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-[#7b52ba] font-bold">&middot;</span>
+              <span>A 30-min technical diagnostic call, at no cost.</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-[#7b52ba] font-bold">&middot;</span>
+              <span>A definitive written verdict before any fee engagement.</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-[#7b52ba] font-bold">&middot;</span>
+              <span>Full NDA / Attorney-client confidentiality protection.</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="mt-8 pt-6 border-t border-[#e6e2f3]">
+          <div class="text-[10px] font-mono uppercase tracking-widest text-[#68617d] mb-1">Direct Liaison</div>
+          <div class="font-serif text-2xl text-[#16122d]">Akash Verma</div>
+          <div class="font-mono text-xs text-[#7b52ba] mt-0.5">Partner &middot; Business & Strategy</div>
+          <div class="font-mono text-xs text-[#68617d] mt-2">info@optimize-ip.com</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="max-w-[1400px] mx-auto px-6 sm:px-10 py-16 text-[#68617d] font-mono text-xs">
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-10 pb-12 border-b border-[#e6e2f3]">
+      <div class="md:col-span-5">
+        <div class="flex items-center gap-3 mb-3">
+          <img src="logo.png" onerror="this.onerror=null; this.parentElement.innerHTML='<svg viewBox=\'0 0 100 100\' class=\'w-7 h-7\'><circle cx=\'38\' cy=\'38\' r=\'22\' fill=\'none\' stroke=\'#7b52ba\' stroke-width=\'12\' /><circle cx=\'64\' cy=\'64\' r=\'22\' fill=\'none\' stroke=\'#5843a6\' stroke-width=\'12\' /><circle cx=\'70\' cy=\'26\' r=\'11\' fill=\'#5843a6\' /><circle cx=\'30\' cy=\'74\' r=\'11\' fill=\'#7b52ba\' /></svg>';" alt="OptimizeIP Logo" class="w-8 h-8 object-contain" />
+          <span class="font-sans font-bold text-2xl text-[#16122d]">Optimize<span class="text-[#7b52ba]">IP</span></span>
+        </div>
+        <p class="text-xs text-[#68617d] max-w-sm">A boutique patent studio. Full-lifecycle IP for the companies building what comes next.</p>
+      </div>
+
+      <div class="md:col-span-3 space-y-2">
+        <div class="uppercase tracking-widest text-[#7b52ba] font-semibold mb-3">Studio Index</div>
+        <div><a href="#services" class="hover:text-[#7b52ba]">Services</a></div>
+        <div><a href="#technologies" class="hover:text-[#7b52ba]">Technologies</a></div>
+        <div><a href="#manifesto" class="hover:text-[#7b52ba]">Manifesto</a></div>
+        <div><a href="#approach" class="hover:text-[#7b52ba]">Approach</a></div>
+        <div><a href="#locations" class="hover:text-[#7b52ba]">Locations</a></div>
+        <div><a href="#contact" class="hover:text-[#7b52ba]">Contact</a></div>
+      </div>
+
+      <div class="md:col-span-4 space-y-2">
+        <div class="uppercase tracking-widest text-[#7b52ba] font-semibold mb-3">Direct Contact</div>
+        <div class="text-[#16122d] font-semibold">info@optimize-ip.com</div>
+        <div class="text-[#16122d] font-semibold">+91 9758 263 443</div>
+        <div class="text-[#68617d] pt-2">Offices: New Delhi &middot; Gurugram &middot; Agra &middot; USA/China 2026</div>
+      </div>
+    </div>
+
+    <div class="pt-8 flex flex-col sm:flex-row justify-between items-center text-[10px] text-[#68617d] gap-4">
+      <div>&copy; 2026 OptimizeIP &middot; All rights reserved</div>
+      <div>Vol. 01 / MMXXVI &middot; Patent Studio</div>
+    </div>
+  </footer>
+
+</body>
+</html>
